@@ -8,13 +8,11 @@ Tuesday 4
 
 
 
-Domain Model
-* (https://www.planttext.com/)
+Initial Domain:
 
-@startuml
+![Initial](https://www.planttext.com/api/plantuml/png/hLDDJyCm3BttLrWSaVeNaAgsGD7MJgNRk8RER1PkKYMfj6dYlvE4TT32aLlydlty6KkM4RRu2eaKV39a84D3Uman598i2OPCTO8aBDKEEMfP6EC335c4SmIm4lO0h5h1_kM0L35ZQqb9y4xhUc6cg63dkaUFVaHf47nibejCjKE7qi8PVid2JDUU6CqSR3NrTeuooVSvHjqr_QMXvo1uG7JPemaHHBzASfr0FnRZMNgZLbopDASUFTK8lKSRh1qQIpAuZEnLkV15_9FmJzr4jWUb_wrYfujowERXGRuecxmkayNbNIUhv27tHlxoJOm2FvA4uB3oAbqlyxBnTbAdZyKcX6-ABAy2jiwAQZAryKXMGXlKVbbNwdAKMy7lCoO_jiXRxSWf_lHSbN_03Hxj7t2wA4BX6y6qSrEGUyX8kvDI-ZJ3_TmTKWss7opKs2jjuPuuJBiKtTVj5jApeJk0QFnJjt4y_GxHhESulhlfLJ-mi6Xk9hwV)
 
-title Web Analysis Design - Initial Domain Model
-
+```java
 class Website {
   Path localPath
   Collection<URL> siteURLs
@@ -94,3 +92,4 @@ Input
 
 Website *-- HTMLDocument
 DocumentParser -->"populates" HTMLDocument
+```
