@@ -2,11 +2,11 @@
 build
 target
 bin
-**.class
+*.class
 *.classpath
 *.project
-.vscode
-
+*.vscode
+*.DS_Store
 # Log file
 *.log
 
