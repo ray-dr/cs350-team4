@@ -1,6 +1,9 @@
 # Java Project
 build
+target
+bin
 **.class
+*.project
 
 # Log file
 *.log
