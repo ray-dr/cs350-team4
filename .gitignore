@@ -3,7 +3,9 @@ build
 target
 bin
 **.class
+*.classpath
 *.project
+.vscode
 
 # Log file
 *.log
