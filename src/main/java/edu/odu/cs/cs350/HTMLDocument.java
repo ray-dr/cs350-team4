@@ -4,6 +4,7 @@
 package edu.odu.cs.cs350;
 
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Collection;
 
 /**
@@ -20,7 +21,8 @@ public class HTMLDocument {
      */
     public HTMLDocument()
     {
-        //not implemented yet
+        localPath = null;
+        images = new ArrayList<Image>();
     }
     
     /**
@@ -30,15 +32,16 @@ public class HTMLDocument {
      */
     public HTMLDocument(Path newPath)
     {
-        //not implemented yet
+        localPath = newPath;
+        images = new ArrayList<Image>();
     }
 
     /**
      * @return the images
      */
-    public Collection<Image> getImages() {
-        return images;
-    }
+    //public Collection<Image> getImages() {
+    //    return images;
+    //}
 
     /**
      * @param images the images to set
@@ -65,7 +68,7 @@ public class HTMLDocument {
      */
     public int numberOfImages()
     {
-        return -1;
+        return images.size();
     }
     
     /*
@@ -74,8 +77,13 @@ public class HTMLDocument {
      */
     public boolean addImage(Image newImage)
     {
-        //not implemented yet
-        return false;
+        if(images.contains(newImage))
+        {
+            return false;
+        }
+        
+        images.add(newImage);
+        return true;
     }
     
     /*
@@ -83,7 +91,14 @@ public class HTMLDocument {
      */
     public String toString()
     {
-        return localPath.toString();
+        if (localPath==null)
+        {
+            return "empty";
+        }
+        
+        String path = localPath.toString();
+        
+        return path;
     }
     
     
