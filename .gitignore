@@ -1,7 +1,12 @@
 # Java Project
 build
-**.class
-
+target
+bin
+*.class
+*.classpath
+*.project
+*.vscode
+*.DS_Store
 # Log file
 *.log
 
