@@ -18,11 +18,13 @@ public class Image {
     
     /**
     * Creates an image with empty path and linkType
-    * 
+    * path is assigned to null
+    * linkType is assigned as external by default
     */
     public Image()
     {
-        //not implemented yet
+        path = null;
+        linkType = Classification.EXTERNAL;
     }
     
     /**
@@ -30,9 +32,10 @@ public class Image {
     * @param locPath is path of image
     * 
     */
-    public Image(String locPath, Classification type) 
+    public Image(URL locPath, Classification type) 
     {
-        //not implemented yet
+        path = locPath;
+        linkType = type;
     }
 
     /**
@@ -40,40 +43,39 @@ public class Image {
      */
     public Classification getLinkType() 
     {
-        //not implemented yet
         return linkType;
     }
 
     /**
-     * @param locPath to compare to path
+     * @param type classifies the image
      * linkType is set to INTERNAL if locPath==path
      * linkType is set to INTRAPAGE if path contains a locPath
      * linkType is set to EXTERNAL if  path doesn't contain locPath 
      *  
      */
-    public void setLinkType(Path locPath) 
+    public void setLinkType(Classification type) 
     {
-        //not implemented yet
+        linkType = type;
     }
 
     /**
      * @return the path
      */
     public URL getPath() {
-        //not implemented yet
+
         return path;
     }
 
     /**
-     * @param path the path to set
+     * @param testPath the path to set
      */
-    public void setPath(Path path) {
-        //not implemented yet
+    public void setPath(URL imageURL) {
+        path = imageURL;
     }
     
     public String toString()
     {
-        return "not implemented yet";
+        return linkType.name();
     }
     
 }
