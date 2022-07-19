@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-/**
- * 
- */
+
 package edu.odu.cs.cs350;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -98,13 +95,4 @@ class TestWebSite {
         assertEquals(newWebsite.numberOfURLs(), 0);
     }
     
-    @Test
-    public void testToString() 
-    {
-        fail("Not yet implemented");
-    }
-=======
-package edu.odu.cs.cs350;
->>>>>>> 20ef6563474dd749e09588709249d0a9d7756fad
-
 }

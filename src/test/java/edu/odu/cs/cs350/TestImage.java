@@ -43,8 +43,6 @@ class TestImage {
     {
         assertNull(defaultImage.getPath());
         assertEquals(defaultImage.getLinkType(), external);
-        assertThat(defaultImage.toString(), 
-                   containsString(Classification.EXTERNAL.name()));
         
     }
     
@@ -55,12 +53,9 @@ class TestImage {
         
         assertEquals(newImage.getPath(), testPath);
         assertEquals(newImage.getLinkType(), intrapage);
-        assertThat(newImage.toString(), 
-                containsString(Classification.INTRAPAGE.name()));
         
         assertNotEquals(defaultImage.getPath(), newImage.getPath());
         assertNotEquals(defaultImage.getLinkType(), newImage.getLinkType());
-        assertNotEquals(defaultImage.toString(), newImage.toString());
         
     }
     
@@ -72,12 +67,9 @@ class TestImage {
         
         assertNull(newImage.getPath());
         assertEquals(newImage.getLinkType(), internal);
-        assertThat(newImage.toString(), 
-                containsString(Classification.INTERNAL.name()) );
         
         assertEquals(defaultImage.getPath(), newImage.getPath());
         assertNotEquals(defaultImage.getLinkType(), newImage.getLinkType());
-        assertNotEquals(defaultImage.toString(), newImage.toString());
         
     }
     
@@ -89,12 +81,9 @@ class TestImage {
         
         assertEquals(newImage.getPath(), testPath);
         assertEquals(newImage.getLinkType(), external);
-        assertThat (newImage.toString(), 
-                containsString(Classification.EXTERNAL.name()) );
         
         assertNotEquals(newImage.getPath(), defaultImage.getPath());
         assertEquals(newImage.getLinkType(), defaultImage.getLinkType());
-        assertEquals(defaultImage.toString(), newImage.toString());
         
     }
 

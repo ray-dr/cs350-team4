@@ -41,7 +41,7 @@ class TestHTMLDocument {
     {
         assertNull(defaultHTML.getLocalPath());
         assertEquals(defaultHTML.numberOfImages(), 0);
-        assertEquals(defaultHTML.toString(), "empty");
+
     }
     
     @Test
@@ -51,7 +51,6 @@ class TestHTMLDocument {
         
         assertEquals(anotherHTML.getLocalPath(), testPath);
         assertEquals(anotherHTML.numberOfImages(), 0);
-        assertEquals(anotherHTML.toString(), pathValue);
         
         assertNotEquals(anotherHTML.getLocalPath(), defaultHTML.getLocalPath());
         assertEquals(anotherHTML.numberOfImages(), defaultHTML.numberOfImages());
@@ -67,11 +66,9 @@ class TestHTMLDocument {
         
         assertEquals(newHTML.getLocalPath(), testPath);
         assertEquals(newHTML.numberOfImages(), 0);
-        assertEquals(newHTML.toString(), pathValue);
         
         assertNotEquals(newHTML.getLocalPath(), defaultHTML.getLocalPath());
         assertEquals(newHTML.numberOfImages(), defaultHTML.numberOfImages());
-        assertNotEquals(newHTML.toString(), defaultHTML.toString());
         
     }
     
@@ -83,7 +80,7 @@ class TestHTMLDocument {
         
         assertNull(defaultHTML.getLocalPath());
         assertEquals(defaultHTML.numberOfImages(), 1);
-        assertEquals(defaultHTML.toString(), "empty");
+        
     }
     
 }
