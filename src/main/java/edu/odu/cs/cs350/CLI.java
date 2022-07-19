@@ -19,13 +19,23 @@ public class CLI {
 /*
 Collects system date and time, formats the output, and saves it to a string.
 */  
-    public String toString()
+    public String outputDateTime()
     {
         DateTimeFormatter systemTime = DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss-"); 
         LocalDateTime timeStamp = LocalDateTime.now();
         String outputDateTime = systemTime.format(timeStamp);
         return outputDateTime;
     }
-    
+  
+// Placeholder
+    public String fileSummary()
+    {
+        return fileSummary();
+    }
+// Placeholder
+    public String fileExtention()
+    {
+        return fileExtention();
+    }
     
 }
