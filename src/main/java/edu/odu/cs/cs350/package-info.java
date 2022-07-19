@@ -1,1 +1,1 @@
-package main.java.edu.odu.cs.cs350;
+package edu.odu.cs.cs350;
