@@ -1,11 +1,11 @@
 package edu.odu.cs.cs350;
 
-<<<<<<< HEAD
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.net.URL;
 import java.util.Iterator;
+import java.util.List;
 
 /*
  * Website is a collection of HTML documents.
@@ -17,8 +17,8 @@ import java.util.Iterator;
 public class WebSite
 {
     private Path localPath;
-    private Collection<URL> siteURLs;
-    private Collection<HTMLDocument> allPages;
+    private List<URL> siteURLs;
+    private List<HTMLDocument> allPages;
     
     
     /*
@@ -38,10 +38,11 @@ public class WebSite
      * @param locPath is a local path to website copy
      * @param urls is a collection of URLs
      */
-    public WebSite(Path locPath, Collection<URL> urls)
+    public WebSite(Path locPath, List<URL> urls)
     {
+        //is this valid assignment?
         localPath = locPath;
-        siteURLs = urls;
+        siteURLs = new ArrayList<URL>(urls);
         allPages = new ArrayList<HTMLDocument>();
     }
     
@@ -64,7 +65,7 @@ public class WebSite
     /**
      * @param siteURLs is a collection of of urls
      */
-    public void setSiteURLs(Collection<URL> urls) 
+    public void setSiteURLs(List<URL> urls) 
     {
        siteURLs = urls;
     }
@@ -107,9 +108,5 @@ public class WebSite
     }
     
  }
-=======
-public class WebSite
-{
 
-}
->>>>>>> a58a4cfc523cac2a95ae5ebedfea3adf6a9c7973
+

@@ -6,6 +6,7 @@ package edu.odu.cs.cs350;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * HTMLDocument represents an HTML page of a website.
@@ -13,7 +14,7 @@ import java.util.Collection;
 public class HTMLDocument {
     
     private Path localPath;
-    private Collection<Image> images;
+    private List<Image> images;
     
     /**
      * Create an empty HTML object with localPath set to null
@@ -39,16 +40,16 @@ public class HTMLDocument {
     /**
      * @return the images
      */
-    //public Collection<Image> getImages() {
-    //    return images;
-    //}
+    public List<Image> getImages() {
+        return images;
+    }
 
     /**
      * @param images the images to set
      */
-    //public void setImages(Collection<Image> images) {
-    //    this.images = images;
-    //}
+    public void setImages(List<Image> images) {
+        this.images = images;
+    }
 
     /**
      * @return the localPath
@@ -86,4 +87,15 @@ public class HTMLDocument {
         return true;
     }
     
+
+    public boolean equals(HTMLDocument rhs)
+    {
+        if(!(rhs instanceof HTMLDocument)){
+            return false;
+        }
+        //not implemented
+        return false;
+
+    }
+
 }
