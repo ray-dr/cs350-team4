@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 package edu.odu.cs.cs350;
 
@@ -10,6 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -50,7 +50,7 @@ class TestWebSite {
     {
         path = Paths.get(TEST_PATH);
         url = new URL(TEST_URL);
-        Collection<URL> testCollection = new ArrayList<URL>();
+        List<URL> testCollection = new ArrayList<URL>();
         testCollection.add(url);
         
         newWebsite = new WebSite(path, testCollection);
@@ -73,11 +73,4 @@ class TestWebSite {
         assertEquals(newWebsite.numberOfURLs(), 0);
     }
     
-=======
-package edu.odu.cs.cs350;
-
-public class TestWebSite
-{
-
->>>>>>> a58a4cfc523cac2a95ae5ebedfea3adf6a9c7973
 }
