@@ -86,22 +86,4 @@ public class HTMLDocument {
         return true;
     }
     
-    /*
-     * Returns localPath as a string
-     */
-    public String toString()
-    {
-        if (localPath==null)
-        {
-            return "empty";
-        }
-        
-        String path = localPath.toString();
-        
-        return path;
-    }
-    
-    
-    
-    
 }

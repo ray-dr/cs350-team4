@@ -73,9 +73,4 @@ public class Image {
         path = imageURL;
     }
     
-    public String toString()
-    {
-        return linkType.name();
-    }
-    
 }
