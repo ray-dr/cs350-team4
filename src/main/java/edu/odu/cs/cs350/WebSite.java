@@ -1,5 +1,6 @@
 package edu.odu.cs.cs350;
 
+<<<<<<< HEAD
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -106,3 +107,9 @@ public class WebSite
     }
     
  }
+=======
+public class WebSite
+{
+
+}
+>>>>>>> a58a4cfc523cac2a95ae5ebedfea3adf6a9c7973
