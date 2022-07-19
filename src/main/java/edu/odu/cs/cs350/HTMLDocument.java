@@ -40,16 +40,16 @@ public class HTMLDocument {
     /**
      * @return the images
      */
-    //public List<Image> getImages() {
-    //    return images;
-    //}
+    public List<Image> getImages() {
+        return images;
+    }
 
     /**
      * @param images the images to set
      */
-    //public void setImages(List<Image> images) {
-    //    this.images = images;
-    //}
+    public void setImages(List<Image> images) {
+        this.images = images;
+    }
 
     /**
      * @return the localPath
