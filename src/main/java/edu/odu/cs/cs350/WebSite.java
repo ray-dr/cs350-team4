@@ -1,6 +1,7 @@
 package edu.odu.cs.cs350;
 
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.net.URL;
 import java.util.Iterator;
@@ -26,59 +27,45 @@ public class WebSite
      */
     public WebSite()
     {
-        //not implemented yet
+        localPath = null;
+        siteURLs = new ArrayList<URL>();
+        allPages = new ArrayList<HTMLDocument>();
     }
     
     /*
      * Non-default constructor
-     * @param locPath local path
-     * @param urls is set of URLs
+     * @param locPath is a local path to website copy
+     * @param urls is a collection of URLs
      */
     public WebSite(Path locPath, Collection<URL> urls)
     {
-        //not implemented yet
+        localPath = locPath;
+        siteURLs = urls;
+        allPages = new ArrayList<HTMLDocument>();
     }
     
     /**
      * @return the localPath
      */
-    public Path getLocalPath() {
+    public Path getLocalPath() 
+    {
         return localPath;
     }
 
     /**
      * @param localPath the localPath to set
      */
-    public void setLocalPath(Path locPath) {
+    public void setLocalPath(Path locPath) 
+    {
         this.localPath = locPath;
     }
 
     /**
-     * @return the siteURLs
+     * @param siteURLs is a collection of of urls
      */
-    public Collection<URL> getSiteURLs() {
-        return siteURLs;
-    }
-
-    /**
-     * @param siteURLs the siteURLs to set
-     */
-    public void setSiteURLs(Collection<URL> siteURLs) {
-        this.siteURLs = siteURLs;
-    }
-
-    /**
-     * @return the allPages
-     */
-    public Collection<HTMLDocument> getAllPages() {
-        return allPages;
-    }
-
-    /**
-     * @param allPages the allPages to set
-     */
-    public void setAllPages(Collection<HTMLDocument> allPages) {
-        this.allPages = allPages;
+    public void setSiteURLs(Collection<URL> urls) 
+    {
+       siteURLs = urls;
     }
     
     /**
@@ -86,8 +73,7 @@ public class WebSite
      */
     public int numberOfURLs()
     {
-        //not implemented yet
-        return -1;
+        return siteURLs.size();
     }
     
     /**
@@ -95,19 +81,12 @@ public class WebSite
      */
     public int numberOfPages()
     {
-        //not implemented yet
-        return -1;
-    }
-    
-    public void AddURL(URL newURL)
-    {
-        //not implemented yet
-    
+        return allPages.size();
     }
     
     public void AddPage(HTMLDocument newPage)
     {
-        //not implemented yet
+        allPages.add(newPage);
     }
     
     /*
