@@ -1,5 +1,17 @@
-plugins {
-   id 'java'
+plugins { 
+    id "java"
+    id "application"
+
+    id "jacoco"
+    id "org.barfuin.gradle.jacocolog" version "2.0.0"
+
+    id "pmd"
+    id "com.github.spotbugs" version "5.0.9"
+    id "checkstyle"
+    id "project-report"
+
+    id "org.jbake.site" version "5.5.0"
+
 }
 
 java {
@@ -8,23 +20,252 @@ java {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
     testImplementation 'org.hamcrest:hamcrest-library:2.2'
 }
 
+jar {
+    archiveBaseName = "WebAnalysis"
+
+    manifest {
+        attributes(
+            "Main-Class": "edu.odu.cs.cs350.WebAnalysis"
+        )
+    }
+}
+
+run {
+    mainClass = "edu.odu.cs.cs350.WebAnalysis"
+    args = []
+}
+
+
+//------------------------------------------------------------------------------
+// Test Configuration
+//------------------------------------------------------------------------------
 test {
-    ignoreFailures = true
     useJUnitPlatform()
+
+    reports {
+        html.required = true
+    }
+
+    ignoreFailures = true
+
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+
+    finalizedBy jacocoTestReport
 }
 
-task reports (dependsOn: ['test', 'javadoc']) {
-test.ignoreFailures=true
+//------------------------------------------------------------------------------
+// Documentation Tool(s)
+//------------------------------------------------------------------------------
+
+javadoc {
+    failOnError false
 }
 
-task deployReports (dependsOn: ['reports']){
-check.dependsOn reports, javadoc
+//------------------------------------------------------------------------------
+// Analysis Tool(s)
+//------------------------------------------------------------------------------
+pmd {
+    toolVersion = "6.21.0"
+
+    ignoreFailures = true
+
+    ruleSets = [
+        "category/java/bestpractices.xml",
+        "category/java/codestyle.xml",
+        "category/java/design.xml",
+        "category/java/errorprone.xml",
+        "category/java/performance.xml"
+    ]
 }
+
+pmdTest {
+    enabled = false
+}
+
+spotbugsMain {
+    ignoreFailures = true
+    effort = "max"
+    reportLevel = "medium"
+
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+
+spotbugsTest {
+    enabled = false
+}
+
+
+checkstyle {
+    toolVersion "8.42"
+    ignoreFailures = true
+    showViolations = false
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        html.destination project.file("build/reports/checkstyle/main.html")
+    }
+}
+
+checkstyleTest {
+    enabled = false
+}
+
+//------------------------------------------------------------------------------
+// Deploy Steps (Convienience Tasks)
+//------------------------------------------------------------------------------
+task reports (dependsOn: [
+    "test",
+    "jacocoTestReport",
+    "checkstyleMain",
+    "javadoc",
+    "check",
+    "spotbugsMain",
+    "projectReport" ] )
+{
+    description "Generate all reports and documentaion for this project."
+}
+
+task copyReports(type: Copy) {
+
+    dependsOn "reports"
+    
+    from "build/reports"
+    into "build/tmp/website/assets"
+
+    description "Copy all reports into \"website\" directory"
+}
+
+task copyDocumentation(type: Copy) {
+
+    dependsOn "reports"
+
+    from "build/docs"
+    into "build/tmp/website/assets"
+
+    description "Copy Javadoc output into \"website\" directory"
+}
+//------------------------------------------------------------------------------
+// JBake Configuration
+//------------------------------------------------------------------------------
+task copyJBakeTemplates(type: Copy) {
+
+    from "src/jbake"
+    into "build/tmp/website"
+}
+
+task doAllTheCopying(dependsOn: [
+    "copyReports",
+    "copyDocumentation",
+    "copyJBakeTemplates"])
+{
+    description "Copy everything into the JBake working directory."
+}
+
+task buildHomePage(dependsOn: copyJBakeTemplates)
+{
+    // Note that "../README.md" is not "./README.md"
+    inputs.files ("build/tmp/website/content/home0.md", "./README.md")
+    outputs.file ("build/tmp/website/content/home.md")
+
+    doLast  {
+        outputs.files.singleFile.withOutputStream { out ->
+            for (file in inputs.files) file.withInputStream {
+                out << it << '\n'
+            }
+        }
+    }
+}
+
+jbake {
+
+    srcDirName = "build/tmp/website"
+}
+
+task setUpWebsite() {
+
+    dependsOn "buildHomePage"
+    dependsOn "doAllTheCopying"
+}
+
+bake {
+
+    dependsOn "setUpWebsite"
+}
+
+//------------------------------------------------------------------------------
+// Deploy/Update Project Website on GitHub Pages
+//------------------------------------------------------------------------------
+
+// !! Need to put link to the gh-pages !!
+def websiteRepo = ""
+
+task clearPages(type: Delete) {
+
+    delete "build/gh-pages"
+}
+
+task clonePagesRepo(dependsOn: ["clearPages"]) {
+
+    doLast {
+        exec {
+            workingDir = "."
+            commandLine = ["git", "clone", websiteRepo, "build/gh-pages"]
+        }
+        exec {
+            workingDir = "build/gh-pages"
+            commandLine = ["git", "config", "user.email", "\"mvoro001@odu.edu\""]
+        }
+        exec {
+            workingDir = "build/gh-pages"
+            commandLine = ["git", "config", "user.name", "\"Mariia Ellis\""]
+        }
+    }
+}
+
+task copyJBakePagesForUse(dependsOn: ["bake", "clonePagesRepo"])
+{
+    group "GitHub Pages"
+
+    doLast {
+        ant.copy (todir: "build/gh-pages") {
+            fileset(dir: "build/jbake")
+        }
+    }
+}
+
+task updateGitHubPages(dependsOn: ["copyJBakePagesForUse"])
+{
+    group "GitHub Pages"
+    description "Copy everything into \"gh-pages\" directory and push to Report Website."
+
+    doLast {
+        def pagesDir = "$buildDir/gh-pages"
+        exec {
+            workingDir = "$buildDir/gh-pages"
+            commandLine = ["git", "add", "."]
+        }
+        exec {
+            workingDir = "$buildDir/gh-pages"
+            commandLine = ["git", "commit", "-m", "Update report site"]
+        }
+        exec {
+            workingDir = "$buildDir/gh-pages"
+            commandLine = ["git", "push"]
+        }
+    }
+}
+
