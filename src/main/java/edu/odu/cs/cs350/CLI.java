@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.net.URL;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDateTime;  
 /*
 Each file shall be named using the data and time the processing started.
@@ -32,10 +33,30 @@ public class CLI {
     
     /*
      * Non-default Constructor
+     * Takes array of strings 
+     * first element of array is a path
+     * the rest of elements are urls
      */
-    public CLI(List<String> args)
+    public CLI(String[] args)
     {
-    	
+        if(isValidPath(args[0]))
+        {
+        	localPath = Paths.get(args[0]);
+        }
+        else
+        {
+        	//print error message
+        }
+        
+        
+        for(int i=1; i < args.length; i++)
+        {
+        	//check if URL is malformed
+        		//discard
+        	//otherwise
+        		//add to siteURLs
+        }
+        
     }
     
     /*
