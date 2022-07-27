@@ -210,8 +210,7 @@ bake {
 // Deploy/Update Project Website on GitHub Pages
 //------------------------------------------------------------------------------
 
-// !! Need to put link to the gh-pages !!
-def websiteRepo = ""
+def websiteRepo = "git@github.com:Mariia-Ellis/tuesday4_reports.git"
 
 task clearPages(type: Delete) {
 
