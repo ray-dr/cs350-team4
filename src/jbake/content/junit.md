@@ -1,4 +1,4 @@
-title=Java Shapes Example - Unit Tests
+title=WebAnalysis - Unit Tests
 type=reportPage
 status=published
 report_file=tests/test/index.html

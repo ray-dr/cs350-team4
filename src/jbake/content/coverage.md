@@ -1,4 +1,4 @@
-title=Java Shapes Example - Unit Test Coverage
+title=WebAnalysis - Unit Test Coverage
 type=reportPage
 status=published
 report_file=jacoco/test/html/index.html

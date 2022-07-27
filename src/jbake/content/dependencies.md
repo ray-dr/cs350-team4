@@ -1,4 +1,4 @@
-title=Java Shapes Example - Dependency Report
+title=WebAnalysis - Dependency Report
 type=reportPage
 status=published
 report_file=project/dependencies/index.html

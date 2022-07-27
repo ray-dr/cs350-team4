@@ -1,4 +1,4 @@
-title=Java Shapes Example - Spotbugs Report
+title=WebAnalysis - Spotbugs Report
 type=reportPage
 status=published
 report_file=spotbugs/main.html

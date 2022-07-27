@@ -1,4 +1,4 @@
-title=Java Shapes Example - Integration Test Coverage
+title=WebAnalysis - Integration Test Coverage
 type=reportPage
 status=published
 report_file=jacoco/jacocoIntegrationTestReport/html/index.html

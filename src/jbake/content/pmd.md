@@ -1,4 +1,4 @@
-title=Java Shapes Example - PMD Report
+title=WebAnalysis - PMD Report
 type=reportPage
 status=published
 report_file=pmd/main.html

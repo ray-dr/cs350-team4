@@ -1,4 +1,4 @@
-title=Java Shapes Example - Gradle Tasks
+title=WebAnalysis - Gradle Tasks
 type=reportPage
 status=published
 report_file=project/tasks.txt

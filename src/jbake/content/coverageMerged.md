@@ -1,4 +1,4 @@
-title=Java Shapes Example - Overall (Merged) Test Coverage
+title=WebAnalysis - Overall (Merged) Test Coverage
 type=reportPage
 status=published
 report_file=jacoco/mergedJacocoReportHTML/html/index.html

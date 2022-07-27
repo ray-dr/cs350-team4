@@ -1,4 +1,4 @@
-title=Java Shapes Example - Checkstyle Report
+title=WebAnalysis - Checkstyle Report
 type=reportPage
 status=published
 report_file=checkstyle/main.html
