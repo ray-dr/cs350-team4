@@ -12,6 +12,7 @@ plugins {
 
     id "org.jbake.site" version "5.5.0"
 
+    id "org.unbroken-dome.test-sets" version "4.0.0"
 }
 
 java {
@@ -25,6 +26,7 @@ repositories {
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation "org.junit.jupiter:junit-jupiter-params:5.8.2"
     testImplementation 'org.hamcrest:hamcrest-library:2.2'
 }
 
@@ -47,7 +49,11 @@ run {
 //------------------------------------------------------------------------------
 // Test Configuration
 //------------------------------------------------------------------------------
-test {
+testSets {
+    integrationTest
+}
+
+tasks.withType(Test) {
     useJUnitPlatform()
 
     reports {
@@ -59,8 +65,30 @@ test {
     testLogging {
         events "passed", "skipped", "failed", "standardOut", "standardError"
     }
+}
 
+test {
     finalizedBy jacocoTestReport
+}
+
+integrationTest {
+    finalizedBy jacocoIntegrationTestReport
+}
+
+task jacocoMergedTestReport(type: JacocoReport,
+    dependsOn: ["test", "integrationTest", "jacocoTestReport", "jacocoIntegrationTestReport"])
+{
+    additionalSourceDirs.from = files(sourceSets.main.allSource.srcDirs)
+    sourceDirectories.from = files(sourceSets.main.allSource.srcDirs)
+    classDirectories.from = files(sourceSets.main.output)
+
+    executionData.from = fileTree(project.rootDir.absolutePath).include("**/build/jacoco/*.exec")
+
+    reports {
+        html.required = true
+        xml.required = false
+        csv.required = true
+    }
 }
 
 //------------------------------------------------------------------------------
@@ -92,6 +120,10 @@ pmdTest {
     enabled = false
 }
 
+pmdIntegrationTest {
+    enabled = false
+}
+
 spotbugsMain {
     ignoreFailures = true
     effort = "max"
@@ -107,6 +139,9 @@ spotbugsTest {
     enabled = false
 }
 
+spotbugsIntegrationTest {
+    enabled = false
+}
 
 checkstyle {
     toolVersion "8.42"
@@ -124,12 +159,18 @@ checkstyleTest {
     enabled = false
 }
 
+checkstyleIntegrationTest {
+    enabled = false
+}
+
 //------------------------------------------------------------------------------
 // Deploy Steps (Convienience Tasks)
 //------------------------------------------------------------------------------
 task reports (dependsOn: [
     "test",
     "jacocoTestReport",
+    "jacocoIntegrationTestReport",
+    "jacocoMergedTestReport",
     "checkstyleMain",
     "javadoc",
     "check",
