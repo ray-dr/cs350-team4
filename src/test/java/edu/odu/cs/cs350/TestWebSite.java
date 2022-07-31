@@ -71,6 +71,45 @@ class TestWebSite {
         
         assertEquals(newWebsite.numberOfPages(), 1);
         assertEquals(newWebsite.numberOfURLs(), 0);
+        
+        //test iterator
+        assertTrue(newWebsite.itPages().hasNext());
+        assertEquals(newWebsite.itPages().next(), newPage);
+        
+    }
+    
+    @Test
+    public void testSetLocalPath(Path locPath)
+    {
+    	newWebsite = new WebSite();
+    	path = Paths.get(TEST_PATH);
+    	newWebsite.setLocalPath(path);
+    	
+    	assertEquals(newWebsite.getLocalPath(), path);
+    	assertNotEquals(newWebsite.getLocalPath(), defaultWebsite.getLocalPath());
+    	assertEquals(newWebsite.numberOfURLs(),0);
+    	assertEquals(newWebsite.numberOfPages(),0);
+    	
+    }
+    
+    @Test
+    public void testSetSiteURLs(List<URL> urls) throws MalformedURLException
+    {
+    	newWebsite = new WebSite();
+    	url = new URL(TEST_URL);
+    	ArrayList<URL> newList = new ArrayList<URL>();
+    	newList.add(url);
+    	newWebsite.setSiteURLs(newList);
+    	
+    	assertEquals(newWebsite.numberOfURLs(), 1);
+    	assertNotEquals(newWebsite.numberOfURLs(), defaultWebsite.numberOfURLs());
+    	assertEquals(newWebsite.getLocalPath(), defaultWebsite.getLocalPath());
+    	assertEquals(newWebsite.numberOfPages(),0);
+    	
+    	//test iterator
+    	assertTrue(newWebsite.itURLs().hasNext());
+    	assertEquals(newWebsite.itURLs().next(), url);
+    	
     }
     
 }
