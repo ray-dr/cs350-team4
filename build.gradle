@@ -76,8 +76,7 @@ integrationTest {
 }
 
 task jacocoMergedTestReport(type: JacocoReport,
-    dependsOn: ["test", "integrationTest", "jacocoTestReport", "jacocoIntegrationTestReport"])
-{
+    dependsOn: ["test", "integrationTest", "jacocoTestReport", "jacocoIntegrationTestReport"]){
     additionalSourceDirs.from = files(sourceSets.main.allSource.srcDirs)
     sourceDirectories.from = files(sourceSets.main.allSource.srcDirs)
     classDirectories.from = files(sourceSets.main.output)
@@ -175,8 +174,7 @@ task reports (dependsOn: [
     "javadoc",
     "check",
     "spotbugsMain",
-    "projectReport" ] )
-{
+    "projectReport" ] ){
     description "Generate all reports and documentaion for this project."
 }
 
@@ -211,13 +209,11 @@ task copyJBakeTemplates(type: Copy) {
 task doAllTheCopying(dependsOn: [
     "copyReports",
     "copyDocumentation",
-    "copyJBakeTemplates"])
-{
+    "copyJBakeTemplates"]){
     description "Copy everything into the JBake working directory."
 }
 
-task buildHomePage(dependsOn: copyJBakeTemplates)
-{
+task buildHomePage(dependsOn: copyJBakeTemplates){
     // Note that "../README.md" is not "./README.md"
     inputs.files ("build/tmp/website/content/home0.md", "./README.md")
     outputs.file ("build/tmp/website/content/home.md")
@@ -276,8 +272,7 @@ task clonePagesRepo(dependsOn: ["clearPages"]) {
     }
 }
 
-task copyJBakePagesForUse(dependsOn: ["bake", "clonePagesRepo"])
-{
+task copyJBakePagesForUse(dependsOn: ["bake", "clonePagesRepo"]){
     group "GitHub Pages"
 
     doLast {
@@ -287,8 +282,7 @@ task copyJBakePagesForUse(dependsOn: ["bake", "clonePagesRepo"])
     }
 }
 
-task updateGitHubPages(dependsOn: ["copyJBakePagesForUse"])
-{
+task updateGitHubPages(dependsOn: ["copyJBakePagesForUse"]){
     group "GitHub Pages"
     description "Copy everything into \"gh-pages\" directory and push to Report Website."
 
