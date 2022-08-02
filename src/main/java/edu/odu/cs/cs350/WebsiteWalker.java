@@ -3,14 +3,17 @@
  */
 package edu.odu.cs.cs350;
 
+import java.nio.file.Path;
+import java.util.List;
+
 /**
  * 
  *
  */
 public class WebsiteWalker {
     
-    WebSite websiteCopy;
-    DocumentParser parser;
+	List<Path> paths;	
+	List<HTMLDocument> allPages;	
     
     /*
      * Default constructor
@@ -32,10 +35,5 @@ public class WebsiteWalker {
     {
         
     }
-    
-    
-    
-    
-    
     
 }
