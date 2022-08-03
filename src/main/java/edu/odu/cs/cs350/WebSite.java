@@ -1,6 +1,7 @@
 package edu.odu.cs.cs350;
 
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.net.URL;
@@ -47,6 +48,7 @@ public class WebSite
     }
     
     /**
+     * Return localPath
      * @return the localPath
      */
     public Path getLocalPath() 
@@ -55,14 +57,16 @@ public class WebSite
     }
 
     /**
+     * Set localPath to passed parameter
      * @param localPath the localPath to set
      */
-    public void setLocalPath(Path locPath) 
+    public void setLocalPath(Path path) 
     {
-        this.localPath = locPath;
+        this.localPath = path;
     }
 
     /**
+     * Set siteURLs to passed parameter
      * @param siteURLs is a collection of of urls
      */
     public void setSiteURLs(List<URL> urls) 
@@ -71,6 +75,7 @@ public class WebSite
     }
     
     /**
+     * Return size of siteURLs
      * @return the siteURLs size
      */
     public int numberOfURLs()
@@ -79,6 +84,7 @@ public class WebSite
     }
     
     /**
+     * Returns size of allPages
      * @return the allPages size
      */
     public int numberOfPages()
@@ -86,13 +92,17 @@ public class WebSite
         return allPages.size();
     }
     
+    /*
+     * Add @newPage to allPages
+     * 
+     */
     public void AddPage(HTMLDocument newPage)
     {
         allPages.add(newPage);
     }
     
     /*
-     * return Iterator over all HTML documents
+     * Return Iterator over all allPages
      */
     public Iterator<HTMLDocument> itPages()
     {
@@ -100,7 +110,7 @@ public class WebSite
     }
     
     /*
-     * return Iterator over all HTML documents
+     * Return Iterator over siteURLs
      */
     public Iterator<URL> itURLs()
     {

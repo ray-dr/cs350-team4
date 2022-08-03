@@ -17,7 +17,7 @@ public class Image {
     private Classification linkType;
     
     /**
-    * Creates an image with empty path and linkType
+    * Create an image with empty path and linkType
     * path is assigned to null
     * linkType is assigned as external by default
     */
@@ -28,17 +28,41 @@ public class Image {
     }
     
     /**
-    * Creates an image 
+    * Create an image 
     * @param locPath is path of image
     * 
     */
-    public Image(URL locPath, Classification type) 
+    public Image(URL url, String locPath) 
     {
-        path = locPath;
+        path = url;
+        classifyImage(locPath);
+    }
+    
+    private void classifyImage(String locPath)
+    {
+
+    	if(this.path.toString().contains(locPath))
+    	{
+    		this.linkType = Classification.INTERNAL;
+    	}
+    	else {
+    		this.linkType = Classification.EXTERNAL;
+    	}
+    }
+    
+    /**
+    * Create an image 
+    * @param locPath is path of image
+    * 
+    */
+    public Image(URL url, Classification type) 
+    {
+        path = url;
         linkType = type;
     }
 
     /**
+     * Return linkType
      * @return the linkType
      */
     public Classification getLinkType() 
@@ -47,6 +71,7 @@ public class Image {
     }
 
     /**
+     * Set linkType
      * @param type classifies the image
      * linkType is set to INTERNAL if locPath==path
      * linkType is set to INTRAPAGE if path contains a locPath
@@ -59,6 +84,7 @@ public class Image {
     }
 
     /**
+     * Return path
      * @return the path
      */
     public URL getPath() {
@@ -67,6 +93,7 @@ public class Image {
     }
 
     /**
+     * Set path
      * @param testPath the path to set
      */
     public void setPath(URL imageURL) {
