@@ -26,8 +26,8 @@ class TestWebSite {
 
     WebSite defaultWebsite;
     WebSite newWebsite;
-    static final String TEST_PATH = "http://test.url.com";
-    static final String TEST_URL = "http://test.url.com/just/some/test";
+    static final String TEST_PATH = "src/test/resources/cs417-one-lecture";
+    static final String TEST_URL = "https://www.cs.odu.edu/~tkennedy/cs417/sum22/Public/leastSquaresExampleSinx/";
     Path path;
     URL url;
     
@@ -79,7 +79,7 @@ class TestWebSite {
     }
     
     @Test
-    public void testSetLocalPath(Path locPath)
+    public void testSetLocalPath()
     {
     	newWebsite = new WebSite();
     	path = Paths.get(TEST_PATH);
@@ -93,7 +93,7 @@ class TestWebSite {
     }
     
     @Test
-    public void testSetSiteURLs(List<URL> urls) throws MalformedURLException
+    public void testSetSiteURLs() throws MalformedURLException
     {
     	newWebsite = new WebSite();
     	url = new URL(TEST_URL);
