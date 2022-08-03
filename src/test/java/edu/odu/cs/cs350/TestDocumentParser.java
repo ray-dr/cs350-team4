@@ -44,6 +44,7 @@ public class TestDocumentParser
         // Placeholder
     }
 
+
     @Test
     public void testExtractImage()
     {
@@ -107,5 +108,6 @@ public class TestDocumentParser
         assertThat(it.next(), equalTo("../../graphics/home.png"));
         assertThat(it.next(), containsString("./../graphics/email.png"));
     }
+
 }
 

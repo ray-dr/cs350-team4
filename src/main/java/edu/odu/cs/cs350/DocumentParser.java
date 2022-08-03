@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -27,7 +26,7 @@ public class DocumentParser {
 	
 	private String theTag;
 	private String theAttribute;
-	
+
 	/**
      * A default SimpleHTMLParser can not be created.
      */
