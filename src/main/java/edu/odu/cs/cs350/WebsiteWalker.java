@@ -14,7 +14,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * 
+ *  WebsiteWalker is a class to walk through directory and identify
+ *  pages to be analyzed. It invokes DocumentParser class to parse and analyze pages,
+ *  then it populates WebSite object with extracted information.
  *
  */
 public class  WebsiteWalker{
@@ -35,6 +37,7 @@ public class  WebsiteWalker{
     
     /*
      * Non-default constructor
+     * @param websiteCopy is a copy of website to be analyzed
      */
     public WebsiteWalker(WebSite websiteCopy)
     {
@@ -46,6 +49,8 @@ public class  WebsiteWalker{
     
     /*
      * Finds all files with passed fileExtension within passed path
+     * @param path os a path to the copy of website
+     * @param fileExtension is extension of pages that are needed to be analyzed
      * @return list of files' paths with provided fileExtension within provided directory
      */
     public List<Path> findByFileExtension(Path path, String fileExtension) throws IOException

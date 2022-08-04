@@ -28,8 +28,9 @@ public class Image {
     }
     
     /**
-    * Create an image 
-    * @param locPath is path of image
+    * Create an image object
+    * @param url is path to image
+    * @param locPath is a path to directory
     * 
     */
     public Image(URL url, String locPath) 
@@ -38,6 +39,10 @@ public class Image {
         classifyImage(locPath);
     }
     
+    /*
+     * Classify a linkType
+     * @param locPath is a path to directory
+     */
     private void classifyImage(String locPath)
     {
 

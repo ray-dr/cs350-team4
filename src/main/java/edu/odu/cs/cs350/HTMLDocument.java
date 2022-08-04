@@ -64,6 +64,7 @@ public class HTMLDocument {
     public void setLocalPath(Path localPath) {
         this.localPath = localPath;
     }
+    
     /*
      * returns number of images in collection
      */
@@ -87,15 +88,5 @@ public class HTMLDocument {
         return true;
     }
     
-
-    public boolean equals(HTMLDocument rhs)
-    {
-        if(!(rhs instanceof HTMLDocument)){
-            return false;
-        }
-        //not implemented
-        return false;
-
-    }
 
 }

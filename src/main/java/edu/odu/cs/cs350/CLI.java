@@ -41,6 +41,7 @@ public class CLI {
     {
     	//check length of ars >= 2
     	
+    	
         if(isValidPath(args[0]))
         {
         	localPath = Paths.get(args[0]);
