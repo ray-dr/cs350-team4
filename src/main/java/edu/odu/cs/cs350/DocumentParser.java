@@ -20,7 +20,8 @@ import org.jsoup.select.Elements;
 import org.jsoup.Jsoup;
 
 /**
- *  Parse an HTML file
+ *  Class to parse an HTML file and extract urls based on tag and attribute
+ *  passed to constructor
  */
 public class DocumentParser {
 	
@@ -28,19 +29,29 @@ public class DocumentParser {
 	private String theAttribute;
 
 	/**
-     * A default SimpleHTMLParser can not be created.
+     * A default DocumentParser can not be created.
      */
     private DocumentParser()
     {
 
     }
-
+    
+    /*
+     * Non-default constructor
+     * @param tag is a tag to be extracted
+     * @param attribute is a attribute to be extracted
+     */
     public DocumentParser(String tag, String attribute)
     {
         this.theTag = tag;
         this.theAttribute = attribute;
     }
     
+    /*
+     * Parse an HTML document
+     * @param thePath is path to the HTML document to be parsed
+     * @return parsed HTMLDocument
+     */
     public HTMLDocument parseHTML(Path thePath) throws IOException
     {
         HTMLDocument doc = new HTMLDocument(thePath);
@@ -50,26 +61,29 @@ public class DocumentParser {
         return doc;
     }
 
-    
+    /*
+     * Extract image tags and URIs
+     * @param is an HTML document from which img tags and URIs to be extracted
+     */
 	private void extractImages(HTMLDocument doc) throws IOException {
 		
 		String content = Files.readString(doc.getLocalPath());
 		
 		//list of img tags
 		List<Element> imgTags = new ArrayList<Element>();
-		//list of all URLs as strings
-		List<String> allURLStrings = new ArrayList<String>();
+		
+		//list of all URIs as strings
+		List<String> allURIStrings = new ArrayList<String>();
 		
 		imgTags = extractAllTags(content);
-		allURLStrings = extractAllURIs(content);
+		allURIStrings = extractAllURIs(content);
 		
-		for(String s : allURLStrings)
+		for(String s : allURIStrings)
 		{
 			URL url = new URL(s);
 			Image newImage = new Image(url, doc.getLocalPath().toString());
 			
 			doc.addImage(newImage);
-			
 			
 		}
 		
