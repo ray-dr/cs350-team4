@@ -1,0 +1,18 @@
+body {
+     background: #E1EAF0 !important;
+}
+
+article {
+    background: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+h5.bg-primary,
+header.bg-primary {
+    background: #337ab7 !important;
+}
+article header  {
+  text-align: center;
+  min-width: 100%;
+}
