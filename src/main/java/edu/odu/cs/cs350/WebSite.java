@@ -41,11 +41,23 @@ public class WebSite
      */
     public WebSite(Path locPath, List<URL> urls)
     {
-        //is this valid assignment?
         localPath = locPath;
         siteURLs = new ArrayList<URL>(urls);
         allPages = new ArrayList<HTMLDocument>();
     }
+    
+    /*
+     * Copy constructor
+     * @param Website is a rhs object
+     */
+    /*
+    public WebSite(WebSite rhs)
+    {
+        this.localPath = rhs.localPath;
+        this.siteURLs = rhs.siteURLs;
+        this.allPages = rhs.allPages;
+    }
+    */
     
     /**
      * Return localPath
