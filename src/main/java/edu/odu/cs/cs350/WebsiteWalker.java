@@ -9,6 +9,7 @@ import static java.nio.file.FileVisitResult.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -67,6 +68,7 @@ public class  WebsiteWalker{
         
     }
     
+    
     /*
      * Populates allPaths with paths to html pages within directory of website
      */
@@ -89,6 +91,14 @@ public class  WebsiteWalker{
     }
     
     /*
+     * Return iterator over pagesToAnalyze
+     */
+    public Iterator<HTMLDocument> iteratorPagesToAnalyze()
+    {
+    	return pagesToAnalyze.iterator();
+    }
+    
+    /*
      * Populate website object with collection of HTML Documents to be analized
      */
     public WebSite populateWebsite() throws IOException
@@ -100,11 +110,11 @@ public class  WebsiteWalker{
     	
     	for(HTMLDocument page : pagesToAnalyze)
     	{
-    		website.AddPage(parser.parseHTML(page.getLocalPath()));
+    		this.website.AddPage(parser.parseHTML(page.getLocalPath()));
     	}
     	
     	
-    	return website;
+    	return this.website;
     }
     
 }

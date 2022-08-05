@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?><html><head><meta charset="UTF-8"/><link href="../../styles/md-scroll.css" media="screen, projection, print" rel="stylesheet" type="text/css"/><link href="../../styles/md-scroll-ext.css" media="screen, projection, print" rel="stylesheet" type="text/css"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://www.cs.odu.edu/~zeil/styles/highlight.js/styles/googlecode.css" rel="stylesheet"/><script src="https://www.cs.odu.edu/~zeil/styles/highlight.js/highlight.pack.js"> </script><script>hljs.initHighlightingOnLoad();</script><script src="../../styles/md-scroll.js" type="text/javascript"> </script><script src="../../styles/md-scroll-ext.js" type="text/javascript"> </script><script src="../../styles/rawdeflate.js" type="text/javascript"> </script><script src="../../styles/plantuml.js" type="text/javascript"> </script><script src="../../styles/mermaid.min.js" type="text/javascript"> </script><script type="text/javascript">
+             window.MathJax = {
+               tex2jax: {
+               inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+               processEscapes: true
+             }
+           };
+           </script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script><title>Least Squares Examples - sin(x)</title></head><body><script>sshowControl0 = { counter: 1,
+             showNumber: 0, max: 1};
+             window.onhashchange = hashHasChanged;</script><div class="navHeader" id="slideshowControlA0"><table class="navHeader"><tr class="slideshowcontrol"><td class="slideshowcontrolLeft"/><td class="slideshowcontrolMiddle">
+<a class="imgLink" href="../../Directory/outline/index.html" title="Course home/outline"><img src="../../graphics/home.png"/></a>
+<a href="mailto:tkennedy@cs.odu.edu?subject=CS417%2C%20Least%20Squares%20Examples%20-%20sin%28x%29"><img src="../../graphics/email.png" title="Email to instructor"/></a><span style="margin: 0 32px;"/></td><td class="slideshowcontrolRight"/></tr></table></div><div class="mainBody"><div class="titleblock"><h1 class="title">Least Squares Examples - sin(x)</h1><h2 class="author">Thomas J. Kennedy</h2></div><div class="toc">Contents:<div class="toc-h1"><a href="#getting-started">1 Getting Started</a></div><div class="toc-h1"><a href="#some-calculus">2 Some Calculus</a></div><div class="toc-h2"><a href="#integration-by-parts">2.1 Integration by Parts</a></div><div class="toc-h1"><a href="#using-the-twelve-integrals">3 Using the Twelve Integrals</a></div><div class="toc-h2"><a href="#solving-ac-b">3.1 Solving Ac|b</a></div><div class="toc-h1"><a href="#the-approximation-function">4 The Approximation Function</a></div><div class="toc-h2"><a href="#remove-the-constant-term-">4.1 Remove the Constant Term?</a></div><div class="toc-h2"><a href="#the-wrong-approach">4.2 The Wrong Approach</a></div><div class="toc-h2"><a href="#the-correct-question">4.3 The Correct Question</a></div><div class="toc-h1"><a href="#changing-the-basis-functions">5 Changing the Basis Functions</a></div><div class="toc-h2"><a href="#solving-the-new-augmented-matrix">5.1 Solving the New Augmented Matrix</a></div><div class="toc-h2"><a href="#the-alternate-approximation-function">5.2 The Alternate Approximation Function</a></div><div class="toc-h2"><a href="#counting-again">5.3 Counting… Again</a></div><div class="toc-h1"><a href="#which-approximation-function-">6 Which Approximation Function?</a></div></div><p>Do you remember $f(x) = \sin(x)$? I want to use more than 3 points to approximate $0 \leq x \leq \pi$.</p>
+    <a id="gettingstarted"/><h1 id="getting-started">1 Getting Started</h1><p>We must use the $Ac = b$ method:</p>
+    <p>$$ \left[\begin{array}{ccc} \int\limits_{x=0}^{\pi} \pi_{0} \pi_{0} dx &amp; \int\limits_{x=0}^{\pi} \pi_{0} \pi_{1}dx &amp; \int\limits_{x=0}^{\pi} \pi_{0} \pi_{2} dx\\ \int\limits_{x=0}^{\pi} \pi_{1} \pi_{0} dx &amp; \int\limits_{x=0}^{\pi} \pi_{1} \pi_{1}dx &amp; \int\limits_{x=0}^{\pi} \pi_{1} \pi_{2} dx\\ \int\limits_{x=0}^{\pi} \pi_{2} \pi_{0} dx &amp; \int\limits_{x=0}^{\pi} \pi_{2} \pi_{1}dx &amp; \int\limits_{x=0}^{\pi} \pi_{2} \pi_{2} dx\\ \end{array}\right] \left[\begin{array}{c} c_0 \\ c_1 \\ c_2 \\ \end{array}\right] = \left[\begin{array}{c} \int\limits_{x=0}^{\pi} \pi_0 f dx\\ \int\limits_{x=0}^{\pi} \pi_1 f dx\\ \int\limits_{x=0}^{\pi} \pi_2 f dx\\ \end{array}\right] $$</p>
+    <p>Note how $A$ is a 3-by-3 matrix. We have three constants to compute (i.e., $c_0, c_1, c_2$).</p>
+    <p>$$ \hat{\varphi} = c_0 \pi_0 + c_1 \pi_1 + c_2 \pi_2 $$</p>
+    <p>Since we need a polynomial of degree 2, our basis functions are:</p>
+    <ul>
+  <li>$\pi_0 = 1$</li>
+  <li>$\pi_1 = x$</li>
+  <li>$\pi_2 = x^2$</li>
+</ul><p>which leads us to</p>
+    <p>$$ \hat{\varphi} = c_0 + c_1 x + c_2 x^2 $$</p>
+    <a id="somecalculus"/><h1 id="some-calculus">2 Some Calculus</h1><p>We have twelve integrals to solve. Let us start with the nine (9) from $A$.</p>
+    <p>$$ \begin{array}{lccc} \pi_{0} \pi_{0} &amp;=&amp; 1 * 1 &amp;\rightarrow&amp; \int\limits_{0}^{\pi} dx &amp;=&amp; x \big|_{0}^{\pi} &amp;=&amp; \pi \\ \pi_{0} \pi_{1} &amp;=&amp; 1 * x &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x dx &amp;=&amp; \frac{1}{2}x^2 \big|_{0}^{\pi} &amp;=&amp; \frac{\pi^2}{2} \\ \pi_{0} \pi_{2} &amp;=&amp; 1 * x^2 &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x^{2} dx &amp;=&amp; \frac{1}{3}x^3 \big|_{0}^{\pi} &amp;=&amp; \frac{\pi^3}{3} \\ \pi_{1} \pi_{0} &amp;=&amp; \pi_0 \pi_1 &amp;\rightarrow&amp; \ldots &amp;=&amp; \ldots &amp;=&amp; \frac{\pi^2}{2} \\ \pi_{1} \pi_{1} &amp;=&amp; x * x &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x^2 dx &amp;=&amp; \ldots &amp;=&amp; \frac{\pi^3}{3} \\ \pi_{1} \pi_{2} &amp;=&amp; x * x^2 &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x^3 dx &amp;=&amp; \frac{1}{4}x^4\big|_{0}^{\pi} &amp;=&amp; \frac{\pi^4}{4} \\ \pi_{2} \pi_{0} &amp;=&amp; \pi_0 \pi_2 &amp;\rightarrow&amp; \ldots &amp;=&amp; \ldots &amp;=&amp; \frac{\pi^3}{3} \\ \pi_{2} \pi_{1} &amp;=&amp; \pi_1 \pi_2 &amp;\rightarrow&amp; \ldots &amp;=&amp; \ldots &amp;=&amp; \frac{\pi^4}{4} \\ \pi_{2} \pi_{2} &amp;=&amp; x^2 * x^2 &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x^4 dx &amp;=&amp; \frac{1}{5}x^5\big|_{0}^{\pi} &amp;=&amp; \frac{\pi^5}{5} \\ \end{array} $$</p>
+    <p>Let us plug the results into $Ac = b$.</p>
+    <p>$$ \left[\begin{array}{ccc} \pi &amp; \frac{1}{2} \pi^{2} &amp; \frac{1}{3} \pi^{3} \\<br/>\frac{1}{2} \pi^{2} &amp; \frac{1}{3} \pi^{3} &amp; \frac{1}{4} \pi^{4} \\ \frac{1}{3} \pi^{3} &amp; \frac{1}{4} \pi^{4} &amp; \frac{1}{5} \pi^{5} \\ \end{array}\right] \left[\begin{array}{c} c_0 \\ c_1 \\ c_2 \\ \end{array}\right] = \left[\begin{array}{c} \int\limits_{x=0}^{\pi} \pi_0 f dx\\ \int\limits_{x=0}^{\pi} \pi_1 f dx\\ \int\limits_{x=0}^{\pi} \pi_2 f dx\\ \end{array}\right] $$</p>
+    <a id="integrationbyparts"/><h2 id="integration-by-parts">2.1 Integration by Parts</h2><p>We are left with the three (3) integrals from $b$.</p>
+    <p>$$ \begin{array}{lccc} \pi_{0} f &amp;=&amp; 1 * \sin(x) &amp;\rightarrow&amp; \int\limits_{0}^{\pi} \sin(x) dx \\ \pi_{1} f &amp;=&amp; x * \sin(x) &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x \sin(x) dx \\ \pi_{2} f &amp;=&amp; x^2 * \sin(x) &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x^{2} \sin(x) dx\\ \end{array} $$</p>
+    <p>The first integral can be evaluated with a quick definition:</p>
+    <p>$$ \begin{array}{ll} \int\limits_{0}^{\pi} sin(x) dx  &amp;=&amp; -\cos(x) |_{x=0}^{\pi} \\  &amp;=&amp; -(-1 - 1) \\  &amp;=&amp; -(-2) \\  &amp;=&amp; 2\ \end{array} $$</p>
+    <p>The remaining two integrals require integration by parts. We will use the <em>DI Method</em>.</p>
+    <div class="splitColumns"><div class="leftColumn">
+<p>$ \int\limits_{0}^{\pi} x \sin(x) dx $</p>
+    
+</div><div class="rightColumn">
+<p><img alt="DI Steps for x sin x" src="integralDI1.png"/></p>
+    
+</div></div><p>$$ \begin{array}{ll} \int\limits_{0}^{\pi} x \sin(x) dx  &amp;=&amp; \left(-x\cos(x) + \sin(x)\right)\big|_{x=0}^{\pi} \\  &amp;=&amp; \left( -\pi(-1) + 0) \right) - \left(0(1) + 0\right) \\  &amp;=&amp; \pi \end{array} $$</p>
+    <hr/><div class="splitColumns"><div class="leftColumn">
+<p>$ \int\limits_{0}^{\pi} x^{2} \sin(x) dx\\ $</p>
+    
+</div><div class="rightColumn">
+<p><img alt="DI Steps for x squared sin x" src="integralDI2.png"/></p>
+    
+</div></div><p>$$ \begin{array}{ll} \int\limits_{0}^{\pi} x^{2} \sin(x) dx\\  &amp;=&amp; \left( -x^{2}\cos(x) + 2x\sin(x) + 2\cos(x) \right)\big|_{x=0}^{\pi} \\  &amp;=&amp; \left( 2x\sin(x) - (x^{2} - 2)\cos(x) \right)\big|_{x=0}^{\pi} \\  &amp;=&amp; 2\pi(0) - \left(\pi^{2} - 2\right)(-1) - \left(0 - (0-2)(1)\right) \\  &amp;=&amp; \left(\pi^{2} - 2\right) + (-2) \\  &amp;=&amp; \pi^{2} - 4 \\ \end{array} $$</p>
+    <a id="usingthetwelveintegrals"/><h1 id="using-the-twelve-integrals">3 Using the Twelve Integrals</h1><p>We can now update $b$.</p>
+    <p>$$ \left[\begin{array}{ccc} \pi &amp; \frac{1}{2} \pi^{2} &amp; \frac{1}{3} \pi^{3} \\<br/>\frac{1}{2} \pi^{2} &amp; \frac{1}{3} \pi^{3} &amp; \frac{1}{4} \pi^{4} \\ \frac{1}{3} \pi^{3} &amp; \frac{1}{4} \pi^{4} &amp; \frac{1}{5} \pi^{5} \\ \end{array}\right] \left[\begin{array}{c} c_0 \\ c_1 \\ c_2 \\ \end{array}\right] = \left[\begin{array}{c} 2 \\ \pi \\ \pi^2 - 4\\ \end{array}\right] $$</p>
+    <p>It is time to construct the augmented $A|b$ matrix!</p>
+    <p>$$ \left[\begin{array}{ccc|c} \pi &amp; \frac{1}{2} \pi^{2} &amp; \frac{1}{3} \pi^{3} &amp; 2 \\<br/>\frac{1}{2} \pi^{2} &amp; \frac{1}{3} \pi^{3} &amp; \frac{1}{4} \pi^{4} &amp; \pi \\ \frac{1}{3} \pi^{3} &amp; \frac{1}{4} \pi^{4} &amp; \frac{1}{5} \pi^{5} &amp; \pi^2 - 4 \\ \end{array}\right] $$</p>
+    <a id="solvingacb"/><h2 id="solving-ac-b">3.1 Solving Ac|b</h2><p>Our first step is to:</p>
+    <ul>
+  <li>Scale row 0 by $\frac{1}{\pi} $</li>
+  <li>Scale row 1 by $\frac{2}{\pi^{2}} $</li>
+  <li>Scale row 2 by $\frac{3}{\pi^{3}} $</li>
+</ul><p>…which results in…</p>
+    <p>$$ \left[\begin{array}{ccc|c} 1 &amp; \frac{1}{2} \pi &amp; \frac{1}{3} \pi^{2} &amp; \frac{2}{\pi} \\<br/>1 &amp; \frac{2}{3} \pi &amp; \frac{1}{2} \pi^{2} &amp; \frac{2}{\pi} \\<br/>1 &amp; \frac{3}{4} \pi &amp; \frac{3}{5} \pi^{2} &amp; \frac{3}{\pi} - \frac{12}{\pi^{3}} \\ \end{array}\right] $$</p>
+    <p>The next step is elimination:</p>
+    <ul>
+  <li>$\vec{r_1} - \vec{r_0}$</li>
+  <li>$\vec{r_2} - \vec{r_0}$</li>
+</ul><p>$$ \left[\begin{array}{ccc|c} 1 &amp; \frac{1}{2} \pi &amp; \frac{1}{3} \pi^{2} &amp; \frac{2}{\pi} \\<br/>0 &amp; \frac{1}{6} \pi &amp; \frac{1}{6} \pi^{2} &amp; 0 \\<br/>0 &amp; \frac{1}{4} \pi &amp; \frac{4}{15} \pi^{2} &amp; \frac{1}{\pi} - \frac{12}{\pi^{3}} \\ \end{array}\right] $$</p>
+    <a id="seconditeration"/><h3 id="second-iteration">3.1.1 Second Iteration</h3><p>Our first step is to:</p>
+    <ul>
+  <li>Scale row 1 by $\frac{6}{\pi} $</li>
+  <li>Scale row 2 by $\frac{4}{\pi} $</li>
+</ul><p>…which results in…</p>
+    <p>$$ \left[\begin{array}{ccc|c} 1 &amp; \frac{1}{2} \pi &amp; \frac{1}{3} \pi^{2} &amp; \frac{2}{\pi} \\<br/>0 &amp; 1 &amp; \pi &amp; 0 \\<br/>0 &amp; 1 &amp; \frac{16}{15} \pi^{2} &amp; \frac{4}{\pi^{2}} - \frac{48}{\pi^{4}} \\ \end{array}\right] $$</p>
+    <p>The next step is (once again) elimination:</p>
+    <ul>
+  <li>$\vec{r_2} - \vec{r_1}$</li>
+</ul><p>$$ \left[\begin{array}{ccc|c} 1 &amp; \frac{1}{2} \pi &amp; \frac{1}{3} \pi^{2} &amp; \frac{2}{\pi} \\<br/>0 &amp; 1 &amp; \pi &amp; 0 \\<br/>0 &amp; 0 &amp; \frac{1}{15} \pi &amp; \frac{4}{\pi^{2}} - \frac{48}{\pi^{4}} \\ \end{array}\right] $$</p>
+    <a id="thirditeration"/><h3 id="third-iteration">3.1.2 Third Iteration</h3><p>Our first step is to:</p>
+    <ul>
+  <li>Scale row 2 by $\frac{15}{\pi} $</li>
+</ul><p>$$ \left[\begin{array}{ccc|c} 1 &amp; \frac{1}{2} \pi &amp; \frac{1}{3} \pi^{2} &amp; \frac{2}{\pi} \\<br/>0 &amp; 1 &amp; \pi &amp; 0 \\<br/>0 &amp; 0 &amp; 1 &amp; \frac{60}{\pi^{3}} - \frac{720}{\pi^{5}} \\ \end{array}\right] $$</p>
+    <a id="timetobacksolve"/><h3 id="time-to-backsolve">3.1.3 Time to Backsolve</h3><p>Instead of backsolving within the matrix… let us take the augmented column ($\vec{b}$) and label each entry with a subscript:</p>
+    <ul>
+  <li>$b_{0}$ for row 0</li>
+  <li>$b_{1}$ for row 1</li>
+  <li>$b_{2}$ for row 2</li>
+</ul><p>That leads us to:</p>
+    <p>$$ \begin{array}{cc} b_{0} - \frac{1}{3}\pi^{2}b_2  &amp;=&amp; \frac{2}{\pi} - \frac{1}{3}\pi^{2} \left(\frac{60}{\pi^3} - \frac{720}{\pi^5}\right) \\  &amp;=&amp; \frac{2}{\pi} - \frac{20}{\pi} - \frac{240}{\pi^3} \\  &amp;=&amp; - \frac{18}{\pi} + \frac{240}{\pi^3} \\ \end{array} $$</p>
+    <p>and</p>
+    <p>$$ \begin{array}{cc} b_{1} - \pi b_2  &amp;=&amp; 0 - \pi \left(\frac{60}{\pi^3} - \frac{720}{\pi^5}\right) \\  &amp;=&amp; -\frac{60}{\pi^2} + \frac{720}{\pi^4} \\ \end{array} $$</p>
+    <p>Let us update the augmented matrix.</p>
+    <p>$$ \left[\begin{array}{ccc|c} 1 &amp; \frac{1}{2} \pi &amp; 0 &amp; -\frac{18}{\pi} + \frac{240}{\pi^3} \\<br/>0 &amp; 1 &amp; 0 &amp; -\frac{60}{\pi^2} + \frac{720}{\pi^4} \\<br/>0 &amp; 0 &amp; 1 &amp; \frac{60}{\pi^{3}} - \frac{720}{\pi^{5}} \\ \end{array}\right] $$</p>
+    <p>Now… for one last step…</p>
+    <p>$$ \begin{array}{cc} b_{0} - \frac{1}{2}\pi b_1  &amp;=&amp; -\frac{18}{\pi} + \frac{240}{\pi^3} - \frac{1}{2}\pi \left(-\frac{60}{\pi^2} + \frac{720}{\pi^4}\right) \\  &amp;=&amp; -\frac{18}{\pi} + \frac{240}{\pi^3} + \frac{30}{\pi} - \frac{360}{\pi^3} \\  &amp;=&amp; \frac{12}{\pi} - \frac{120}{\pi^3} \end{array} $$</p>
+    <a id="theapproximationfunction"/><h1 id="the-approximation-function">4 The Approximation Function</h1><p>After all that Calculus and Linear Algebra… we have… our approximation function!</p>
+    <p>$$ \hat{\varphi} = \left(\frac{12}{\pi} - \frac{120}{\pi^3} \right)  + \left(-\frac{60}{\pi^2} + \frac{720}{\pi^4} \right) x  + \left(\frac{60}{\pi^{3}} - \frac{720}{\pi^{5}}\right) x^2 $$</p>
+    <a id="removetheconstantterm"/><h2 id="remove-the-constant-term-">4.1 Remove the Constant Term?</h2><p>Suppose that after all the derivation we questioned whether we needed $c_0$ (i.e., considered dropping the $c_0$ term).</p>
+    <ul>
+  <li>Can we?</li>
+  <li>Could we justify it?</li>
+  <li>What would the impact (error) be?</li>
+</ul><p>We know that $\hat{\varphi}$ is the best possible approximation function out of every possible degree-two polynomial in the form</p>
+    <p>$$ p_2 = c_0 \pi_0 + c_1 \pi_1 + c_2 \pi_2 $$</p>
+    <p>Therefore, we know that</p>
+    <p>$$ \begin{array}{cc} ||f - \hat{\varphi}|| &amp;&lt;&amp; ||f - \left(\hat{\varphi} - c_0 \right)||\\ ||f - \left(c_0 + c_1 x + c_2 x^2 \right)|| &amp;&lt;&amp; ||f - \left(c_1 x + c_2 x^2 \right)|| \end{array} $$</p>
+    <a id="thewrongapproach"/><h2 id="the-wrong-approach">4.2 The Wrong Approach</h2><p>We might be inclined to frame dropping $c_0$ as </p>
+    <blockquote>
+  <p><em>If $c_0$ is small, we should condition on it. If we have a condition number that is less than or equal to 1…</em></p>
+    
+</blockquote><p>However, this only works if $c_0 \approx 0$. <strong>For sake of discussion… let us continue this incorrect analysis</strong>. </p>
+    <p>Let us start with notation. The approximation function $\hat{\varphi}$ needs to be replaced with $\varphi_n$. If we are dropping $c_0$, we no longer have the best possible approximation!</p>
+    <p>Let us condition on $c_0$… which leads us to $\varphi_{n}(c_0)$.</p>
+    <p>$$ \begin{array}{cc} (cond\phantom{1}\varphi_{n})(c_0)  &amp;=&amp; \left|\frac{c_{0} \varphi^{\prime}}{\varphi}\right| \end{array} $$</p>
+    <p>We need to compute $\varphi^{\prime}$:</p>
+    <p>$$ \begin{array}{cc} \varphi^{\prime}  &amp;=&amp; \frac{\partial \varphi}{\partial c_0}\left(c_0 + c_1 x + c_2 x^2 \right)\\  &amp;=&amp; \frac{\partial \varphi}{\partial c_0}\left(c_0 \right)  &amp;+&amp; \frac{\partial \varphi}{\partial c_0}\left(c_1 x \right)  &amp;+&amp; \frac{\partial \varphi}{\partial c_0}\left(c_2 x^2 \right) \\  &amp;=&amp; 1 &amp;+&amp; 0 &amp;+&amp; 0 \\  &amp;=&amp; 1 \end{array} $$</p>
+    <p>We can now use $\varphi^{\prime}$ and $\varphi$.</p>
+    <p>$$ \begin{array}{cc} (cond\phantom{1}\varphi_{n})(c_0)  &amp;=&amp; \left|\frac{c_{0} \varphi^{\prime}}{\varphi}\right| \\  &amp;=&amp; \left|\frac{c_{0} (1)}{c_0 + c_1 x + c_2 x^2}\right| \\  &amp;=&amp; \left|\frac{c_{0} (1)}{c_0 + c_1 x + c_2 x^2}\right| \\ \end{array} $$</p>
+    <p>We could argue that…</p>
+    <p>$$ \begin{array}{cc} (cond\phantom{1}\varphi_{n})(c_0)  &amp;=&amp; \left|\frac{c_{0} (1)}{c_0 + c_1 x + c_2 x^2}\right| \\  &amp;\leq&amp; \left|\frac{c_0}{c_0} \right| \\  &amp;\leq&amp; 1 \end{array} $$</p>
+    <p>$\therefore$ the problem is well conditioned on $c_0$.</p>
+    <p>The next step would be to compute $c_0$:</p>
+    <p>$ \frac{12}{\pi} - \frac{120}{\pi^3} \approx -0.05 $</p>
+    <p>If we <strong>erroneously</strong> consider $-0.05$ to be <em>“small enough”</em>… that would lead to:</p>
+    <p>$$ \text{abs error} \approx \left|\hat{\varphi} - \left(\hat{\varphi} - 0.05 \right)\right| = 0.05 $$</p>
+    <p>and</p>
+    <p>$$ \text{rel error} \approx \left|\frac{\hat{\varphi} - \left(\hat{\varphi} - 0.05 \right)}{\hat{\varphi}}\right|  = \left|\frac{\hat{\varphi} - \hat{\varphi} + 0.05 }{\hat{\varphi}}\right|  = \left|\frac{0.05}{\hat{\varphi}}\right| $$</p>
+    <p>for $ x \in [0, \pi]$</p>
+    <a id="thecorrectquestion"/><h2 id="the-correct-question">4.3 The Correct Question</h2><p>However, none of that analysis is justified. We are really interested in minimizing arithmetic error propagation. How many arithmetic operations are there? Can we reduce the number of arithmetic operations?</p>
+    <p>Let us count the number of arithmetic operations.</p>
+    <p>$$ \hat{\varphi} = \left(\frac{12}{\pi} - \frac{120}{\pi^3} \right)  + \left(-\frac{60}{\pi^2} + \frac{720}{\pi^4} \right) x  + \left(\frac{60}{\pi^{3}} - \frac{720}{\pi^{5}}\right) x^2 $$</p>
+    <ul>
+  <li>6 divisions</li>
+  <li>3 multiplications + 12 $\pi$ multiplications</li>
+  <li>2 subtractions</li>
+  <li>3 additions</li>
+</ul><hr/><p>$$ \hat{\varphi} = \left(\frac{12}{\pi} - \frac{120}{\pi^3} \right)  + \left(\left(-\frac{60}{\pi^2} + \frac{720}{\pi^4} \right)  + \left(\frac{60}{\pi^{3}} - \frac{720}{\pi^{5}}\right)x \right)x $$</p>
+    <ul>
+  <li>6 divisions</li>
+  <li>2 multiplications + 12 $\pi$ multiplications</li>
+  <li>2 subtractions</li>
+  <li>3 additions</li>
+</ul><hr/><p>$$ \hat{\varphi} = \frac{1}{\pi} \left[\left(12 - \frac{120}{\pi^2} \right)  + \left(\left(-\frac{60}{\pi} + \frac{720}{\pi^3} \right)  + \left(\frac{60}{\pi^{2}} - \frac{720}{\pi^{4}}\right)x \right)x\right] $$</p>
+    <ul>
+  <li>6 divisions</li>
+  <li>3 multiplications + 7 $\pi$ multiplications</li>
+  <li>2 subtractions</li>
+  <li>3 additions</li>
+</ul><p>or if we treat $\frac{1}{\pi}$ as $\frac{(\ldots)}{\pi}$ (i.e., divide by $\pi$):</p>
+    <ul>
+  <li>6 divisions</li>
+  <li>2 multiplications + 7 $\pi$ multiplications</li>
+  <li>2 subtractions</li>
+  <li>3 additions</li>
+</ul><a id="changingthebasisfunctions"/><h1 id="changing-the-basis-functions">5 Changing the Basis Functions</h1><p>If we truly intend to forgo $c_0$, we would change our approximation function from:</p>
+    <div class="noFloat"> </div><div class="sidebar pct50">
+<p>To minimize confusion, I have:</p>
+    
+<ul>
+  <li>started counting at ‘1’ in the second function</li>
+  <li>marked the constants with $\prime$ in the second function</li>
+</ul>
+</div><p>$$ \hat{\varphi} = c_0 \pi_0 + c_1 \pi_1 + c_2 \pi_2 $$</p>
+    <p>to</p>
+    <p>$$ \hat{\varphi} = c_1^{\prime} \pi_1 + c_2^{\prime} \pi_2 $$</p>
+    <p>Note that $\pi_1 = x$ and $\pi_2 = x^2$ in both functions.</p>
+    <p>We would then have a slightly different $Ac = b$…</p>
+    <p>$$ \left[\begin{array}{ccc} \int\limits_{x=0}^{\pi} \pi_{1} \pi_{1}dx &amp; \int\limits_{x=0}^{\pi} \pi_{1} \pi_{2} dx\\ \int\limits_{x=0}^{\pi} \pi_{2} \pi_{1}dx &amp; \int\limits_{x=0}^{\pi} \pi_{2} \pi_{2} dx\\ \end{array}\right] \left[\begin{array}{c} c_1^{\prime} \\ c_2^{\prime} \\ \end{array}\right] = \left[\begin{array}{c} \int\limits_{x=0}^{\pi} \pi_1 f dx\\ \int\limits_{x=0}^{\pi} \pi_2 f dx\\ \end{array}\right] $$</p>
+    <p>Since… $\pi_1$ and $\pi_2$ are the same as in the original basis function… we can reuse a few of the previous integrals!</p>
+    <p>$$ \begin{array}{lcc} \pi_{1} \pi_{1} &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x^2 dx &amp;=&amp; \frac{\pi^3}{3} \\ \pi_{1} \pi_{2} &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x^3 dx &amp;=&amp; \frac{\pi^4}{4} \\ \pi_{2} \pi_{1} &amp;\rightarrow&amp; \ldots &amp;=&amp; \frac{\pi^4}{4} \\ \pi_{2} \pi_{2} &amp;\rightarrow&amp; \int\limits_{0}^{\pi} x^4 dx &amp;=&amp; \frac{\pi^5}{5} \\ \end{array} $$</p>
+    <p>and</p>
+    <p>$$ \begin{array}{ll} \int\limits_{0}^{\pi} x \sin(x) dx &amp;=&amp; \pi \\ \int\limits_{0}^{\pi} x^{2} \sin(x) dx &amp;=&amp; \pi^{2} - 4 \\ \end{array} $$</p>
+    <p>Which leads to a 2-by-2 matrix (plus the augmented column):</p>
+    <p>$$ \left[\begin{array}{cc|c} \frac{1}{3} \pi^{3} &amp; \frac{1}{4} \pi^{4} &amp; \pi \\ \frac{1}{4} \pi^{4} &amp; \frac{1}{5} \pi^{5} &amp; \pi^2 - 4 \\ \end{array}\right] $$</p>
+    <a id="solvingthenewaugmentedmatrix"/><h2 id="solving-the-new-augmented-matrix">5.1 Solving the New Augmented Matrix</h2><p><strong>Note that we will use one-based indexing for this matrix.</strong></p>
+    <p>Our first step is to:</p>
+    <ul>
+  <li>scale row 1 by $\frac{3}{\pi^3}$</li>
+  <li>scale row 2 by $\frac{4}{\pi^4}$</li>
+</ul><p>$$ \left[\begin{array}{cc|c} 1 &amp; \frac{3}{4} \pi &amp; \frac{3}{\pi^2} \\ 1 &amp; \frac{4}{5} \pi &amp; \frac{4}{\pi^2} - \frac{16}{\pi^4} \\ \end{array}\right] $$</p>
+    <p>The next step is elimination.</p>
+    <p>$$ \left[\begin{array}{cc|c} 1 &amp; \frac{3}{4} \pi &amp; \frac{3}{\pi^2} \\ 0 &amp; \frac{1}{20} \pi &amp; \frac{1}{\pi^2} - \frac{16}{\pi^4} \\ \end{array}\right] $$</p>
+    <p>The last step (before backsolving) is to scale row 2 by $\frac{20}{\pi}$</p>
+    <p>$$ \left[\begin{array}{cc|c} 1 &amp; \frac{3}{4} \pi &amp; \frac{3}{\pi^2} \\ 0 &amp; 1 &amp; \frac{20}{\pi^3} - \frac{320}{\pi^5} \\ \end{array}\right] $$</p>
+    <p><strong>Now to backsolve…</strong></p>
+    <p>$$ \begin{array}{cc} b_{0} - \frac{3}{4}\pi b_1  &amp;=&amp; \frac{3}{\pi^2} - \frac{3}{4}\pi \left(\frac{20}{\pi^3} - \frac{320}{\pi^5}\right)\\  &amp;=&amp; \frac{3}{\pi^2} - \frac{15}{\pi^2} + \frac{240}{\pi^4}\\  &amp;=&amp; -\frac{12}{\pi^2} + \frac{240}{\pi^4}\\ \end{array} $$</p>
+    <p>That leaves us with…</p>
+    <p>$$ \left[\begin{array}{cc|c} 1 &amp; 0 &amp; -\frac{12}{\pi^2} + \frac{240}{\pi^4} \\ 0 &amp; 1 &amp; \frac{20}{\pi^3} - \frac{320}{\pi^5} \\ \end{array}\right] $$</p>
+    <a id="thealternateapproximationfunction"/><h2 id="the-alternate-approximation-function">5.2 The Alternate Approximation Function</h2><p>The alternate appoximation function is…</p>
+    <p>$$ \hat{\varphi}^{\prime} =  \left(-\frac{12}{\pi^2} + \frac{240}{\pi^4}\right) x  + \left(\frac{20}{\pi^3} - \frac{320}{\pi^5}\right) x^2 $$</p>
+    <a id="countingagain"/><h2 id="counting-again">5.3 Counting… Again</h2><p>Let us count the number of arithmetic operations.</p>
+    <p>$$ \hat{\varphi}^{\prime} =  \left(-\frac{12}{\pi^2} + \frac{240}{\pi^4}\right) x  + \left(\frac{20}{\pi^3} - \frac{320}{\pi^5}\right) x^2 $$</p>
+    <ul>
+  <li>4 divisions</li>
+  <li>3 multiplications + 10 $\pi$ multiplications</li>
+  <li>1 subtraction</li>
+  <li>2 additions</li>
+</ul><hr/><p>$$ \hat{\varphi}^{\prime} =  \frac{x}{\pi^2}\left(\left(-12 + \frac{240}{\pi^2}\right)  + \left(\frac{20}{\pi} - \frac{320}{\pi^3}\right) x\right) $$</p>
+    <ul>
+  <li>4 divisions</li>
+  <li>2 multiplications + 4 $\pi$ multiplications</li>
+  <li>1 subtraction</li>
+  <li>2 additions</li>
+</ul><a id="whichapproximationfunction"/><h1 id="which-approximation-function-">6 Which Approximation Function?</h1><p>Which approximation function is the best? That can be answered by evaluating…</p>
+    <p>$$ \begin{array}{ccc} ||f - \hat{\varphi}||  &amp;&lt;&amp; ||f - \left(\hat{\varphi} - c_0 \pi_0 \right)||  &amp;\stackrel{\text{?}}{=}&amp; ||f - \hat{\varphi}^{\prime}||\\ ||f - \left(c_0 \pi_0 + c_1 \pi_1 + c_2 \pi_2 \right)||  &amp;&lt;&amp; ||f - \left(c_1 \pi_1 + c_2 \pi_2 \right)||  &amp;\stackrel{\text{?}}{=}&amp; ||f - \left(c_1^{\prime} \pi_1 + c_2^{\prime} \pi_2 \right)||\\ ||f - \left(c_0 + c_1 x + c_2 x^2 \right)||  &amp;&lt;&amp; ||f - \left(c_1 x + c_2 x^2 \right)||  &amp;\stackrel{\text{?}}{=}&amp; ||f - \left(c_1^{\prime} x + c_2^{\prime} x^2\right)||\\ \end{array} $$</p>
+    <p>But… I will leave that as an <em>exercise for the reader.</em></p>
+    </div><script>sshowControl0 = { counter: 1,
+             showNumber: 0, max: 1};
+             window.onhashchange = hashHasChanged;</script><div class="navFooter" id="slideshowControl0"><table class="navFooter"><tr class="slideshowcontrol"><td class="slideshowcontrolLeft"/><td class="slideshowcontrolMiddle">
+<a class="imgLink" href="../../Directory/outline/index.html" title="Course home/outline"><img src="../../graphics/home.png"/></a>
+<a href="mailto:tkennedy@cs.odu.edu?subject=CS417%2C%20Least%20Squares%20Examples%20-%20sin%28x%29"><img src="../../graphics/email.png" title="Email to instructor"/></a><span style="margin: 0 32px;"/></td><td class="slideshowcontrolRight"/></tr></table></div><div class="copyright">© 2018-2022, Old Dominion Univ.</div></body></html>

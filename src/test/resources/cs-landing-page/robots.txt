@@ -1,0 +1,2428 @@
+
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if IE 9]>    <html lang="en-us" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="Computer Sciences, Academic Department, 1 Year, Permissions Node, Academic Departments Schools">
+    
+    <meta name="description" content="The Department of Computer Science (CS) offers programs leading to the Bachelor of Science in Computer Science (BSCS), Master of Science with a major in computer science, and Doctor of Philosophy with a major in computer science.">
+    
+    <meta name="cqtags" content="property:permissions,type:acaddept,org:acadaffairs/colleges/sci/compsci,Administrative Tags:atozindex/acad-depts,review:1year">
+   
+    <link rel="canonical" href="https://www.odu.edu/compsci"/>
+   
+    
+    
+
+
+    
+
+<meta property="og:title" content="Computer Science" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.odu.edu/compsci" />
+    <meta property="og:image" content="http://www.odu.edu/compsci/_jcr_content/image.img.2160.jpg" />
+    <meta property="og:description" content="The Department of Computer Science (CS) offers programs leading to the Bachelor of Science in Computer Science (BSCS), Master of Science with a major in computer science, and Doctor of Philosophy with a major in computer science."> 
+    <meta property="og:site_name" content="Old Dominion University" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="The Department of Computer Science (CS) offers programs leading to the Bachelor of Science in Computer Science (BSCS), Master of Science with a major in computer science, and Doctor of Philosophy with a major in computer science.">
+    <meta name="twitter:title" content="Computer Science" />
+    <meta name="twitter:image" content="http://www.odu.edu/compsci/_jcr_content/image.img.2160.jpg" /> 
+    
+<!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <!--<link rel="stylesheet" href="/etc/designs/odu/clientlibs/libs/fontawesome5/css/all.min.css">-->
+ <link rel="stylesheet" href="/etc/designs/odu/fonts/microgramma/MyFontsWebfontsKit.css">
+ <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,800,700|Open+Sans+Condensed:300"> -->
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/7e8bd7f817.js" crossorigin="anonymous"></script>
+<script src="/etc/designs/odu/clientlibs/libs/jquery-migrate-3.0.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='/etc/designs/odu/clientlibs/libs/jquery-3.2.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+    //document.write(unescape("%3Clink rel='stylesheet' href='/etc/designs/odu/clientlibs/libs/fontawesome5/css/all.min.css'%3E"));
+    document.write(unescape("%3Cscript crossorigin='anonymous' src='https://kit.fontawesome.com/7e8bd7f817.js'%3E%3C/script%3E"));
+    //document.write(unescape("%3Cscript src='/etc/designs/odu/clientlibs/libs/jquery-migrate-3.0.0.js' type='text/javascript'%3E%3C/script%3E"));
+    document.write(unescape("%3Clink rel='stylesheet' href='/etc/designs/odu/fonts/microgramma/MyFontsWebfontsKit.css' type='text/css'%3E"));
+}
+</script>
+<script>
+
+jQuery.browser = {};
+(function () {
+jQuery.browser.msie = false;
+jQuery.browser.version = 0;
+if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+jQuery.browser.msie = true;
+jQuery.browser.version = RegExp.$1;
+}
+})();
+
+/* Start - Script to add an offset for the floating section navigation with respect to all the anchor headings */
+(function($, window) {
+    var adjustAnchor = function() {
+        var $anchor = $(':target'), fixedElementHeight = 50;
+        if ($anchor.length > 0) {
+            window.scrollTo(0, $anchor.offset().top - fixedElementHeight);
+        }
+    };
+    $(window).on('hashchange load', function() {
+        adjustAnchor();
+    });
+})(jQuery, window);
+/* End - Script to add an offset for the floating section navigation with respect to all the anchor headings */
+
+</script>
+<link rel="stylesheet" href="/etc/designs/odu/clientlibs/libs/slick.min.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/odu/clientlibs.min.css" type="text/css">
+<script src="/etc/designs/odu/clientlibs/libs/slick.min.js"></script>
+<script src="/etc/designs/odu/clientlibs.min.js"></script>
+<link href="/etc/designs/odu.css" rel="stylesheet" type="text/css">
+
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,800,700|Open+Sans+Condensed:300"/>
+<!--<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />-->
+<meta name="google-site-verification" content="jpDI6dx5_fuSbDRGAfspvqUj2x1iZKRZU616IBKFkaU" />
+    <!--[if lt IE 9]>        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]--> 
+    
+    
+    
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/etc/designs/odu/favicon.ico">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/odu/favicon.ico">
+    
+    <title>Department of Computer Science - Old Dominion University</title>
+    
+
+
+
+<meta property="fb:app_id" content="235232689861954">
+
+<script>
+    var names = new Array();
+    var imgUrls = new Array();
+    var generatedLinks = new Array();
+    window.fbAsyncInit = function() {
+        // init the FB JS SDK
+        FB.init({
+            appId: '235232689861954', // App ID from the app dashboard
+            status: true, // Check Facebook Login status
+            xfbml: true                                  // Look for social plugins on the page
+        });
+    
+// Additional initialization code such as adding Event Listeners goes here
+    };
+    // Load the SDK asynchronously
+    (function() {
+        // If we've already installed the SDK, we're done
+        if (document.getElementById('facebook-jssdk')) {
+            return;
+        }
+
+        // Get the first script element, which we'll use to find the parent node
+        var firstScriptElement = document.getElementsByTagName('script')[0];
+        // Create a new script element and set its id
+        var facebookJS = document.createElement('script');
+        facebookJS.id = 'facebook-jssdk';
+        // Set the new script's source to the source of the Facebook JS SDK
+        facebookJS.src = '//connect.facebook.net/en_US/all.js';
+        // Insert the Facebook JS SDK into the DOM
+        firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
+    }());
+</script>
+</head>
+<body class="contentpage page basicpage " data-scrolldepth="false" data-pagepath="/compsci">
+    <p class="accessible">[ <a href="#content">skip to content</a> ]</p>
+    <label for="uni-phone-menu-jump-toggle" class="accessible">Phone menu jump toggle</label>
+    <input type="checkbox" id="uni-phone-menu-jump-toggle" />
+    <div id="page-container">
+        <header id="university-header">
+    
+    <hgroup id="university-logo">
+    
+        <div class="constrain">
+    
+            <h1><a href="/">Old Dominion University</a></h1>
+            <h2>Idea Fusion</h2>
+            
+        </div>
+        
+    </hgroup>
+    
+    <div id="university-utility-links" class="constrain">
+        
+        <div class="utility-links"><nav role="navigation" aria-label="Find People, Dates, and Information">
+
+    <form action="/search" method="get" id="university-search">
+        <label for="uni-search-bar" class="accessible">
+            Search ODU
+        </label>
+        <label for="twitter-typeahead" class="accessible">
+            Search ODU
+        </label>
+        <input id="uni-search-bar" type="text" name="q" placeholder="Search ODU or start typing an office, program, major, topic..."/>
+        <input type="hidden" name="cx" value="006647748818914228700:idbduvl7ohw"/>
+        <input type="hidden" name="cof" value="FORID:11"/>
+        <input type="hidden" name="ie" value="UTF-8"/>
+        <button type="submit" aria-label="search button">
+            <i class="fal fa-search"></i>
+        </button>
+    </form>
+
+
+    <ul class="fl-right">
+        <li><a href="/shortcut/myodu"><i class="fas fa-users"></i> myODU</a></li>
+    
+        <li><a href="/a-to-z"><i class="fas fa-list"></i> A to Z</a></li>
+    
+        <li><a href="/directory"><i class="fas fa-sitemap"></i> Directories</a></li>
+    
+        <li><a href="/employment"><i class="fas fa-briefcase"></i> Employment</a></li>
+    
+        <li><a href="/library"><i class="fas fa-folder-open"></i> Libraries</a></li>
+    </ul>
+
+    
+</nav></div>
+        <div id="university-audience-menu" class="audience-menu"><nav role="navigation" aria-label="Audience Menu" class="constrain">
+    <p class="mobile-only">Information for</p>
+    <ul class="top-menu">
+        <li class="dropdown-container">
+            <div class="dropdown-trigger">
+                INFO FOR <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="dropdown-content">
+                <a href="/prospective"><i class="fas fa-"></i> Future Students</a>
+            
+                <a href="/students"><i class="fas fa-"></i> Current Students</a>
+            
+                <a href="/international"><i class="fas fa-"></i> International</a>
+            
+                <a href="/military"><i class="fas fa-"></i> Military</a>
+            
+                <a href="/family"><i class="fas fa-"></i> Parents &amp; Family</a>
+            
+                <a href="/partnerships/community"><i class="fas fa-"></i> Community</a>
+            
+                <a href="/partnerships/business"><i class="fas fa-"></i> Business &amp; Partners</a>
+            
+                <a href="/alumni"><i class="fas fa-"></i> Alumni</a>
+            
+                <a href="/media"><i class="fas fa-"></i> Media</a>
+            
+                <a href="/facultystaff"><i class="fas fa-"></i> Faculty &amp; Staff </a>
+            </div>
+        </li>
+    </ul>
+    
+</nav></div>
+    </div>
+
+    <div id="university-main-menu" class="main-menu"><nav class="constrain" aria-label="University Navigation"> 
+    <ul class="main-menu-nav">
+        <li class="has-flyout first-level">
+  
+            <a href="/about">About ODU</a>
+            
+            <ul class="flyout">
+
+                <li><a href="/about/president">Office of the President</a></li>
+
+            
+
+                <li><a href="/about/orgchart">Administration &amp; Organization</a></li>
+
+            
+
+                <li><a href="/about/bov">Board of Visitors</a></li>
+
+            
+
+                <li><a href="/about/accreditation">Accreditation</a></li>
+
+            
+
+                <li><a href="/about/facts-and-figures">Facts &amp; Figures</a></li>
+
+            
+
+                <li><a href="/about/visitors/coastal-virginia">Coastal Virginia</a></li>
+
+            
+
+                <li><a href="/about/historyandarchives">History &amp; Archives</a></li>
+
+            
+
+                <li><a href="/academics/odufaculty">Nationally Recognized Faculty</a></li>
+
+            
+
+                <li><a href="/about/odu-publications">ODU Publications</a></li>
+
+            
+
+                <li><a href="/about/planning">Strategic Planning &amp; Initiatives</a></li>
+
+            
+
+                <li><a href="/about/contact">Contact the University</a></li>
+
+            
+
+                <li><a href="/about/connect">Connect with ODU</a></li>
+
+            </ul>
+
+            
+            
+        </li>
+    
+        <li class="has-flyout first-level">
+  
+            <a href="/academics">Academics</a>
+            
+            <ul class="flyout">
+
+                <li><a href="/academics/programs">Programs</a></li>
+
+            
+
+                <li><a href="/colleges">Colleges</a></li>
+
+            
+
+                <li><a href="/academics/calendar">Academic Calendar</a></li>
+
+            
+
+                <li><a href="/academics/catalogs">University Catalogs</a></li>
+
+            
+
+                <li><a href="/cepd">Continued Learning</a></li>
+
+            
+
+                <li><a href="/academics/online">Distance Learning</a></li>
+
+            
+
+                <li><a href="/graduateschool">Graduate School</a></li>
+
+            
+
+                <li><a href="/honors">Honors College</a></li>
+
+            
+
+                <li><a href="/academics/rhec">Regional Centers</a></li>
+
+            
+
+                <li><a href="/academics/international/study-abroad">Study Abroad</a></li>
+
+            
+
+                <li><a href="/academics/summer">Summer Studies</a></li>
+
+            </ul>
+
+            
+            
+        </li>
+    
+        <li class="has-flyout first-level">
+  
+            <a href="/admission">Admission</a>
+            
+            <ul class="flyout">
+
+                <li><a href="/admission/apply">Apply for Admission</a></li>
+
+            
+
+                <li><a href="/admission/undergraduate">Undergraduate Admission</a></li>
+
+            
+
+                <li><a href="/admission/graduate">Graduate Admission</a></li>
+
+            
+
+                <li><a href="/admission/international">International Admission</a></li>
+
+            
+
+                <li><a href="/admission/undergraduate#nondegree.html">Non-Degree Admission</a></li>
+
+            
+
+                <li><a href="/admission/undergraduate#reactivation.html">Reactivation</a></li>
+
+            
+
+                <li><a href="/admission/proficiency">English Proficiency</a></li>
+
+            
+
+                <li><a href="/admission/admitted">Admitted Student Information</a></li>
+
+            </ul>
+
+            
+            
+        </li>
+    
+        <li class="has-flyout first-level">
+  
+            <a href="/tuition-aid">Tuition &amp; Financial Aid</a>
+            
+            <ul class="flyout">
+
+                <li><a href="/tuition-aid/costs-tuition">Costs &amp; Tuition</a></li>
+
+            
+
+                <li><a href="/tuition-aid/financial-aid">Financial Aid</a></li>
+
+            
+
+                <li><a href="https://itsapps.odu.edu/calculator/">ODU Cost Estimator</a></li>
+
+            </ul>
+
+            
+            
+        </li>
+    
+        <li class="has-flyout first-level">
+  
+            <a href="/life">University Life</a>
+            
+            <ul class="flyout">
+
+                <li><a href="/life/gettinginvolved">Getting Involved</a></li>
+
+            
+
+                <li><a href="/life/culture">Culture &amp; Entertainment</a></li>
+
+            
+
+                <li><a href="/life/diversity">Diversity at ODU</a></li>
+
+            
+
+                <li><a href="/life/dining">Dining</a></li>
+
+            
+
+                <li><a href="/housing">Housing</a></li>
+
+            
+
+                <li><a href="/parkingservices">Transportation &amp; Parking </a></li>
+
+            
+
+                <li><a href="/life/sports-recreation">Sports &amp; Fitness</a></li>
+
+            
+
+                <li><a href="/accessibility">Accessibility</a></li>
+
+            
+
+                <li><a href="/life/health-safety">Health &amp; Safety</a></li>
+
+            
+
+                <li><a href="/life/dean-students/student-outreach">Student Outreach</a></li>
+
+            
+
+                <li><a href="/life/offcampus">Off-Campus University Life</a></li>
+
+            
+
+                <li><a href="/calendar">University Calendars &amp; Events</a></li>
+
+            
+
+                <li><a href="https://www.bkstr.com/olddominionstore/home">University Village Bookstore</a></li>
+
+            </ul>
+
+            
+            
+        </li>
+    
+        <li class="has-flyout first-level">
+  
+            <a href="/impact">Research &amp; Entrepreneurship</a>
+            
+            <ul class="flyout">
+
+                <li><a href="/impact/expertise">Faculty Expertise</a></li>
+
+            
+
+                <li><a href="/impact/centers">Research Centers</a></li>
+
+            
+
+                <li><a href="/impact/initiatives">Research Initiatives</a></li>
+
+            
+
+                <li><a href="/iie">Institute for Innovation &amp; Entrepreneurship</a></li>
+
+            
+
+                <li><a href="/research">Office of Research</a></li>
+
+            
+
+                <li><a href="/odurf">ODU Research Foundation</a></li>
+
+            </ul>
+
+            
+            
+        </li>
+    
+        <li class="has-flyout first-level">
+  
+            <a href="/life/culture/arts">Arts</a>
+            
+            <ul class="flyout">
+
+                <li><a href="/life/culture/arts/galleries">Gordon Art Galleries</a></li>
+
+            
+
+                <li><a href="/life/culture/arts/diehn">Diehn Concert Series</a></li>
+
+            
+
+                <li><a href="/life/culture/arts/litfest">Literary Festival</a></li>
+
+            
+
+                <li><a href="https://barryartmuseum.odu.edu/">Barry Art Museum</a></li>
+
+            
+
+                <li><a href="/music">Diehn School of Music</a></li>
+
+            
+
+                <li><a href="/commtheatre/theatre">Theatre</a></li>
+
+            
+
+                <li><a href="/commtheatre/dance">Dance</a></li>
+
+            
+
+                <li><a href="/commtheatre/film">Cinema</a></li>
+
+            </ul>
+
+            
+            
+        </li>
+    
+        <li class="first-level">
+  
+            <a href="http://www.odusports.com">Athletics</a>
+            
+            
+
+            
+            
+        </li>
+    </ul>
+    
+</nav></div>
+    
+    <a href="#mobile-menu" id="university-mobile-menu-toggle" class="university-mobile-menu-toggle"><i class="fal fa-bars"></i><span class="accessible">Toggle Mobile Menu</span></a>
+    
+</header>
+        
+<section class="second theme-1">
+
+    
+
+
+
+
+
+
+
+
+
+
+<header>
+    
+    <div class="constrain" style="max-width: 100% !important; background-size: cover; background-position: 50%; background-image:url('/compsci/_jcr_content/headerimage.img.2160.jpg')">
+        
+        
+        
+            <h1><span>Department of</span>Computer Science</h1>
+        
+        
+        
+        <a class="info" href="#image-description"><i class="fas fa-info" aria-hidden="true"></i><span class="accessible">More Information about this image</span></a>
+        <div id="image-description" class="image-description">
+            <p>blue digital binary data on computer screen. Close-up shallow DOF
+</p>
+        </div>
+        
+        
+    </div>
+        
+</header>
+
+<section class="sectionnavigation">
+    
+    <nav aria-label="University Section Navigation">
+
+       
+
+           <h2><a href="#">Navigation - Computer Science</a></h2>
+           <div id="university-section-nav" class="section-nav">
+                <div id="floatnav_wrapper" class="floatnav_wrapper card-1">
+                    <floatnav>
+                        <ul id="float_tray">
+                            <li>
+                                <a href="/compsci" class="headerLink">
+                                    
+                                    Home
+                                </a>
+                                
+
+
+
+                            </li>
+                        
+                            <li class="has-sub">
+                                <a href="/compsci/academics" class="headerLink">
+                                    
+                                    Academics<i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul>
+
+                                    <li><a href="/compsci/academics/undergraduate">Undergraduate</a></li>
+
+                                
+
+                                    <li><a href="/compsci/academics/graduate">Graduate</a></li>
+
+                                
+
+                                    <li><a href="/compsci/academics/undergraduate#linked">Linked Programs</a></li>
+
+                                </ul>
+
+
+
+                            </li>
+                        
+                            <li>
+                                <a href="/compsci/future" class="headerLink">
+                                    
+                                    Future Students
+                                </a>
+                                
+
+
+
+                            </li>
+                        
+                            <li class="has-sub">
+                                <a href="/compsci/current" class="headerLink">
+                                    
+                                    Current Students<i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul>
+
+                                    <li><a href="/compsci/advising">Advising</a></li>
+
+                                
+
+                                    <li><a href="/compsci/scholarships-and-endowments">Scholarships &amp; Endowments</a></li>
+
+                                
+
+                                    <li><a href="/compsci/current/resources">Student Resources</a></li>
+
+                                
+
+                                    <li><a href="/compsci/forms">Forms</a></li>
+
+                                
+
+                                    <li><a href="https://www.cs.odu.edu/~zeil/courseSchedule/">Course Schedule</a></li>
+
+                                </ul>
+
+
+
+                            </li>
+                        
+                            <li>
+                                <a href="/compsci/research" class="headerLink">
+                                    
+                                    Research
+                                </a>
+                                
+
+
+
+                            </li>
+                        
+                            <li>
+                                <a href="/compsci/news" class="headerLink">
+                                    
+                                    News
+                                </a>
+                                
+
+
+
+                            </li>
+                        
+                            <li>
+                                <a href="https://secure.acceptiva.com/?cst=1c0e01&allocation=College%20of%20Sciences" class="headerLink">
+                                    
+                                    Support Us
+                                </a>
+                                
+
+
+
+                            </li>
+                        </ul>
+                    </floatnav>
+                </div>
+           </div>
+           <ul class="section-nav-mobile">
+               <li>
+
+                   <span>
+                       <a href="/compsci" class="headerLink active">
+                           
+                           Home
+                       </a>
+                       
+                   </span>
+                   
+
+
+
+               </li>
+           
+               <li class="has-sub">
+
+                   <span>
+                       <a href="/compsci/academics" class="headerLink ">
+                           
+                           Academics
+                       </a>
+                       <a href="#" class="toggle">
+                           <i class="fal fa-angle-down closed"></i>
+                           <i class="fal fa-angle-up open"></i>
+                           <span class="accessible">Open/Close Menu</span>
+                       </a>
+                   </span>
+                   <ul>
+                        
+                       <li><a href="/compsci/academics/undergraduate">Undergraduate</a></li>
+
+                   
+                        
+                       <li><a href="/compsci/academics/graduate">Graduate</a></li>
+
+                   
+                        
+                       <li><a href="/compsci/academics/undergraduate#linked">Linked Programs</a></li>
+
+                   </ul>
+
+
+
+               </li>
+           
+               <li>
+
+                   <span>
+                       <a href="/compsci/future" class="headerLink ">
+                           
+                           Future Students
+                       </a>
+                       
+                   </span>
+                   
+
+
+
+               </li>
+           
+               <li class="has-sub">
+
+                   <span>
+                       <a href="/compsci/current" class="headerLink ">
+                           
+                           Current Students
+                       </a>
+                       <a href="#" class="toggle">
+                           <i class="fal fa-angle-down closed"></i>
+                           <i class="fal fa-angle-up open"></i>
+                           <span class="accessible">Open/Close Menu</span>
+                       </a>
+                   </span>
+                   <ul>
+                        
+                       <li><a href="/compsci/advising">Advising</a></li>
+
+                   
+                        
+                       <li><a href="/compsci/scholarships-and-endowments">Scholarships &amp; Endowments</a></li>
+
+                   
+                        
+                       <li><a href="/compsci/current/resources">Student Resources</a></li>
+
+                   
+                        
+                       <li><a href="/compsci/forms">Forms</a></li>
+
+                   
+                        
+                       <li><a href="https://www.cs.odu.edu/~zeil/courseSchedule/">Course Schedule</a></li>
+
+                   </ul>
+
+
+
+               </li>
+           
+               <li>
+
+                   <span>
+                       <a href="/compsci/research" class="headerLink ">
+                           
+                           Research
+                       </a>
+                       
+                   </span>
+                   
+
+
+
+               </li>
+           
+               <li>
+
+                   <span>
+                       <a href="/compsci/news" class="headerLink ">
+                           
+                           News
+                       </a>
+                       
+                   </span>
+                   
+
+
+
+               </li>
+           
+               <li>
+
+                   <span>
+                       <a href="https://secure.acceptiva.com/?cst=1c0e01&allocation=College%20of%20Sciences" class="headerLink ">
+                           
+                           Support Us
+                       </a>
+                       
+                   </span>
+                   
+
+
+
+               </li>
+           </ul>
+       
+       
+
+   </nav>
+    
+</section>
+
+<nav class="breadcrumb-trail">
+    
+    <ul class="constrain">
+        
+        <li><a href="/"><img src="/etc/designs/odu/images/odu-crown-breadcrumb-home.png" alt="Home"/></a></li>
+        
+            <li><a href="/colleges">Colleges</a></li>
+        
+            <li><a href="/sci">College of Sciences</a></li>
+        
+            <li><a href="/sci/departments">Departments</a></li>
+        
+            <li><a href="/compsci">Computer Science</a></li>
+        
+        
+    </ul>
+    
+</nav>
+
+
+<script type="text/javascript">
+    function playPauseVideo(video) {
+        if(video.paused){
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+    
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+          var context = this, args = arguments;
+          var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+          var callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
+      };
+    
+    $(function() {
+        var floatnav = function() {
+            var floatnav_ofset="625";
+            if (window.matchMedia("(min-width: 1900px)").matches) {
+                var floatnav_ofset="625";
+            } else if (window.matchMedia("(max-width: 1900px) and (min-width: 1515px)").matches) {
+                var floatnav_ofset="575";
+            } else if (window.matchMedia("(max-width: 1515px) and (min-width: 1280px)").matches) {
+                var floatnav_ofset="475";
+            } else if (window.matchMedia("(max-width: 1280px) and (min-width: 1150px)").matches) {
+                var floatnav_ofset="455";
+            } else if (window.matchMedia("(max-width: 1150px) and (min-width: 990px)").matches) {
+                var floatnav_ofset="425";
+            } else if (window.matchMedia("(max-width: 990px) and (min-width: 850px)").matches) {
+                var floatnav_ofset="385";
+            } else if (window.matchMedia("(max-width: 850px) and (min-width: 768px)").matches) {
+                var floatnav_ofset="355";
+            }
+        if(window.pageYOffset >= floatnav_ofset) {
+            $('#university-section-nav #floatnav_wrapper').addClass('fixed');
+        } else {
+            $('#university-section-nav #floatnav_wrapper').removeClass('fixed');
+        }
+    };
+            
+            $("#university-section-nav #float_tray").append("<li class='more' data-width='80'><a class='more-toggler' href='#'>More <i class='fas fa-chevron-down'></i></a><ul></ul></li>");
+            if($("#university-section-nav #float_tray").find("li.more").length) {
+                $("#university-section-nav #float_tray").find("li.more").on("click",function(e){
+                    if($(e.target).attr("class")==="more-toggler"){
+                        e.preventDefault();
+                        if($(this).find("a.more-toggler > i").length) {
+                            $(this).find("a.more-toggler > i").eq(0).parent().parent().siblings().find("ul:eq(0)").removeClass("hover");
+                            $(this).find("a.more-toggler > i").eq(0).parent().parent().find("ul:eq(0)").toggleClass('hover');
+                        }
+                    }
+                });
+            }
+            //auto hide more on overflow horizontal menu script
+            function MenuOverflowHorz() {
+                if($(document).width() > 750){
+                    var navwidth = 0, extraWidth = 30;
+                    var morewidth = $('#university-section-nav #float_tray .more').outerWidth(true);
+                    $('#university-section-nav #float_tray > li:not(.more)').each(function() {
+                        navwidth += $(this).outerWidth( true );
+                    });
+
+                    var availablespace = $('#university-section-nav #float_tray').width() - morewidth - extraWidth;
+                    // var availablespace = $('#university-program-menu').width();
+                    if (navwidth > availablespace) {
+                        var lastItem = $('#university-section-nav #float_tray > li:not(.more)').last();
+                        lastItem.attr('data-width', lastItem.width());
+                        lastItem.prependTo($('#university-section-nav #float_tray .more ul:eq(0)'));
+                        MenuOverflowHorz();
+                    } else {            
+                        var firstMoreElement = $('#university-section-nav #float_tray li.more li').first();
+                        if (navwidth + firstMoreElement.data('width') < availablespace) {
+                            firstMoreElement.insertBefore($('#university-section-nav #float_tray .more'));
+                        }
+                    }
+
+                    if ($('#university-section-nav .more li').length > 0) {
+                        $('#university-section-nav .more').css('display','inline-block');
+                    } else {
+                        $('#university-section-nav .more').css('display','none');
+                    }
+                }else{
+                    var temp_html ="";
+                    if ($('#university-section-nav .more ul li').length > 0) {
+                        // console.log($(".more ul:eq(0)").html());
+                         temp_html = $("#university-section-nav .more ul:eq(0)").html();
+                         $("#university-section-nav .more ul:eq(0)").html("");
+                         // $("<div>mydiv</div>").insertBefore($('#float_tray .more'));
+                         $('#university-section-nav #float_tray .more').before( temp_html );
+                         temp_html ='';
+                    } else {
+                        $('#university-section-nav .more').css('display','none');
+                    }
+                }
+            }
+            MenuOverflowHorz();
+            
+            
+            function isOnScreen(elem) {//console.log("is onscreen inside");
+                // if the element doesn't exist, abort
+                if( elem.length == 0 ) {
+                    return;
+                }
+                var $window = jQuery(window);
+                var viewport_top = $window.scrollTop();
+                var viewport_height = $window.height();
+                var viewport_bottom = viewport_top + viewport_height;
+                var $elem = jQuery(elem);
+                var top = $elem.offset().top;
+                var height = $elem.height();
+                var bottom = top + height;
+
+                return (top >= viewport_top && top < viewport_bottom) ||
+                (bottom > viewport_top && bottom <= viewport_bottom) ||
+                (height > viewport_height && top <= viewport_top && bottom >= viewport_bottom);
+            }
+            
+            function fittrans(){//console.log("inside fittrans --> ");
+                $(".listpages.cardstyle").each(function(){ //console.log($(this));
+                    if(isOnScreen($(this)) && !$(this).hasClass( "come-in" )){
+                        $(this).addClass("come-in"); //console.log("inside each fittrans");
+                    }
+                });
+            }
+            fittrans();
+    
+    window.onscroll = function() {
+        fittrans();
+    };
+    //parallax end
+            
+        $(document).ready(function() {
+            
+            $('body').mouseup(function(e) 
+                {
+                    var container = $("floatnav");
+
+                    // if the target of the click isn't the container nor a descendant of the container
+
+                    if (!container.is(e.target) && container.has(e.target).length === 0) 
+                    {
+                      container.find("ul.hover").toggleClass('hover');
+                    }
+                });
+            
+            setTimeout(function() {
+                var floatnav_head = $("#university-section-nav #floatnav_wrapper");
+                if(floatnav_head.length >0){
+                  var temp_1 = $("#university-section-nav #floatnav_wrapper").position();
+                  if (temp_1.top !== "0") {
+                    floatnav_ofset = temp_1.top-50;
+                  }
+                  floatnav();
+                }
+            },0);
+            
+            $( window ).resize(function() {
+                setTimeout(function() {
+                    var floatnav_head = $("#university-section-nav #floatnav_wrapper");
+                    if(floatnav_head.length >0){
+                      var temp_1 = $("#university-section-nav #floatnav_wrapper").position();
+                      if (temp_1.top !== "0") {
+                        floatnav_ofset = temp_1.top-50;
+                      }
+                      floatnav();
+                    }
+                },0);
+            });
+            
+            $(".list-collection-odd").find(".back-overlay").addClass("left");
+            $(".list-collection-even").find(".back-overlay").addClass("right");
+            var module = document.getElementsByClassName("clamp");
+            for (var i = 0; i < module.length; i++) {
+              $clamp(module[i], {clamp: 4});
+            }
+            var module1 = $(".clg_sect .division_head");
+            for (var i = 0; i < module1.length; i++) {
+              $clamp(module1[i], {clamp: 2});
+            }
+            
+            window.onresize = function() {
+                    MenuOverflowHorz();
+                    // setTimeout(function() {
+                    // 	MenuOverflowHorz();
+                    // },1000);
+            };
+            
+            /* Start - Script to navigate to the anchor name correctly for the anchor urls provided in heading component with respect to the tabs component */
+         /*   var curPageUrl = window.location.href;
+            if(curPageUrl.includes("tab") && curPageUrl.includes("&") && curPageUrl.includes("=")){){
+                var hashUrl = curPageUrl.substring(
+                    curPageUrl.lastIndexOf("#")+1, 
+                    curPageUrl.lastIndexOf("&")
+                );
+                if (hashUrl != "" && hashUrl != null) {
+                    hashUrl = hashUrl.replace("=","");
+                }
+                setTimeout(function(){
+                    window.location.hash = hashUrl;
+                }, 500);
+            }   */
+            /* End - Script to navigate to the anchor name correctly for the anchor urls provided in heading component with respect to the tabs component */
+        });
+        
+        $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+        });
+
+        $(window).scroll(function() {
+          setTimeout(function() {
+             if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 50px
+              if($('#return-to-top').not(':visible').length){
+                $('#return-to-top').fadeIn(300);    // Fade in the arrow
+              }
+            } else {
+
+              fadeoutradialfn();
+            }                            
+          },0);
+          //navigation and filter section activater on scroll
+          floatnav();
+        });
+
+        var fadeoutradialfn = debounce(function() {
+          if($('#return-to-top').find(':visible').length >0){
+            $('#return-to-top').fadeOut(300);   // Else fade out the arrow
+          }
+        },0);
+        
+    });
+</script>
+
+    <div id="content" class="constrain">
+
+        
+        
+        <div class="container-16 clearfix">
+            <div class="grid-12 page-content col-border">
+                
+                
+
+
+
+
+                
+                
+                
+                <section class="section parsys">
+
+
+<h1 class="microgramma watersideHead   ">Discover, Innovate & Create the Future.</h1>
+
+
+
+<link rel="stylesheet" href="/etc/designs/odu/clientlibs/libs/bootstrap4.min.css" type="text/css">
+<script src="/etc/designs/odu/clientlibs/libs/bootstrap4.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<div class="featureslider ">
+    <div class="view">
+
+    <!-- The carousel -->
+    <div id="myCarousel" class="preview-popover carousel slide" data-interval="8000"  data-ride="carousel" data-gatracking="false">
+
+        
+        <ol class="carousel-indicators ">
+		      
+                     <li  class="item1 active circle " data-item=0 data-slide-to="0"> 
+                    <img class="img_popover" src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage.img.150.jpg" alt="slider0" width="150" height="auto">
+                    <div class="top_arrow"></div>
+                     </li>
+
+                    
+                     <li  class="item2 circle " data-item="1" data-slide-to="1"> 
+                    <img class="img_popover" src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1111269359.img.150.jpg" alt="slider1" width="150" height="auto">
+                    <div class="top_arrow"></div>
+                     </li>
+                    
+                     <li  class="item3 circle " data-item="2" data-slide-to="2"> 
+                    <img class="img_popover" src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1314390240.img.150.jpg" alt="slider2" width="150" height="auto">
+                    <div class="top_arrow"></div>
+                     </li>
+                    
+                     <li  class="item4 circle " data-item="3" data-slide-to="3"> 
+                    <img class="img_popover" src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1276897239.img.150.jpg" alt="slider3" width="150" height="auto">
+                    <div class="top_arrow"></div>
+                     </li>
+                    
+                     <li  class="item5 circle " data-item="4" data-slide-to="4"> 
+                    <img class="img_popover" src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1747839459.img.150.jpg" alt="slider4" width="150" height="auto">
+                    <div class="top_arrow"></div>
+                     </li>
+                    
+                     <li  class="item6 circle " data-item="5" data-slide-to="5"> 
+                    <img class="img_popover" src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1989172252.img.150.jpg" alt="slider5" width="150" height="auto">
+                    <div class="top_arrow"></div>
+                     </li>
+                    
+        </ol>
+        
+
+
+    <!-- The slideshow -->
+    <div class="carousel-inner dimension odublue">
+
+      
+          <div class="carousel-item active ">
+
+              <div class="img-container position-relative">
+                <img src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage.img.900.png" alt="slider1" width="100%" height="auto">    
+
+                
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" data-slide="prev">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-left fa-2x"></i></span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-right fa-2x"></i></span>
+                    </a>
+                
+
+               </div>
+
+              <div class="pagedetail">
+                <a href="/compsci/research#Bioinformatics" title="Bioinformatics"><h3> Bioinformatics<i class="fas fa-angle-right title-arrow"></i></h3></a>
+                <p class="" title=""> </p>
+                <div class="right"><a href="/compsci/research#Bioinformatics">Learn more <i class="fa fa-chevron-right"> </i> </a></div>
+              </div>
+
+          </div>
+        
+          <div class="carousel-item ">
+
+              <div class="img-container position-relative">
+               <img src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1111269359.img.900.png" alt="slider2" width="100%" height="auto">  
+
+                
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" data-slide="prev">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-left fa-2x"></i></span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-right fa-2x"></i></span>
+                    </a>
+                
+
+              </div>
+              <div class="pagedetail">
+                <a href="/compsci/research#WSDL" title="Web Science and Digital Libraries"><h3> Web Science and Digital Libraries<i class="fas fa-angle-right title-arrow"></i> </h3></a>
+                <p class="" title=""> </p>
+                <div class="right"><a href="/compsci/research#WSDL">Learn more <i class="fa fa-chevron-right"> </i> </a></div>
+
+              </div>
+
+          </div>
+        
+          <div class="carousel-item ">
+
+              <div class="img-container position-relative">
+               <img src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1314390240.img.900.png" alt="slider3" width="100%" height="auto">  
+
+                
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" data-slide="prev">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-left fa-2x"></i></span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-right fa-2x"></i></span>
+                    </a>
+                
+
+              </div>
+              <div class="pagedetail">
+                <a href="/compsci/research#HPC" title="High Performance Computing"><h3> High Performance Computing<i class="fas fa-angle-right title-arrow"></i> </h3></a>
+                <p class="" title=""> </p>
+                <div class="right"><a href="/compsci/research#HPC">Learn more <i class="fa fa-chevron-right"> </i> </a></div>
+
+              </div>
+
+          </div>
+        
+          <div class="carousel-item ">
+
+              <div class="img-container position-relative">
+               <img src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1276897239.img.900.png" alt="slider4" width="100%" height="auto">  
+
+                
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" data-slide="prev">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-left fa-2x"></i></span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-right fa-2x"></i></span>
+                    </a>
+                
+
+              </div>
+              <div class="pagedetail">
+                <a href="/compsci/research#CRTC" title="Center for Real-time Computing"><h3> Center for Real-time Computing<i class="fas fa-angle-right title-arrow"></i> </h3></a>
+                <p class="" title=""> </p>
+                <div class="right"><a href="/compsci/research#CRTC">Learn more <i class="fa fa-chevron-right"> </i> </a></div>
+
+              </div>
+
+          </div>
+        
+          <div class="carousel-item ">
+
+              <div class="img-container position-relative">
+               <img src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1747839459.img.900.png" alt="slider5" width="100%" height="auto">  
+
+                
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" data-slide="prev">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-left fa-2x"></i></span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-right fa-2x"></i></span>
+                    </a>
+                
+
+              </div>
+              <div class="pagedetail">
+                <a href="/compsci/research#AIDA" title="Artificial Intelligence & Data Analytics"><h3> Artificial Intelligence & Data Analytics<i class="fas fa-angle-right title-arrow"></i> </h3></a>
+                <p class="" title=""> </p>
+                <div class="right"><a href="/compsci/research#AIDA">Learn more <i class="fa fa-chevron-right"> </i> </a></div>
+
+              </div>
+
+          </div>
+        
+          <div class="carousel-item ">
+
+              <div class="img-container position-relative">
+               <img src="/sci/departments/compsci/news/features1/_jcr_content/par/columns/column_0/sliderimage_1989172252.img.900.png" alt="slider6" width="100%" height="auto">  
+
+                
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" data-slide="prev">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-left fa-2x"></i></span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next">
+                        <span class="shadow-arrow"><i class="fas fa-chevron-right fa-2x"></i></span>
+                    </a>
+                
+
+              </div>
+              <div class="pagedetail">
+                <a href="/compsci/research#Cybersecurity" title="Cybersecurity"><h3> Cybersecurity<i class="fas fa-angle-right title-arrow"></i> </h3></a>
+                <p class="" title=""> </p>
+                <div class="right"><a href="/compsci/research#Cybersecurity">Learn more <i class="fa fa-chevron-right"> </i> </a></div>
+
+              </div>
+
+          </div>
+        
+    </div>
+
+   </div>
+
+    </div> 
+</div> 
+
+<div class="quickfacts2 horizontal small-call section"><div class="constrain">
+    
+        <span style="display:none" id="qf-25d48b25-2170-490a-a984-2aba84f8cc63"></span>
+        
+            <section>
+                <a href="https://computer-science-schools.com/old-dominion-university">
+                    <h2 class="title"><span>of computer science schools nationally</span></h2>
+                    <p class="number">Top 10% </p>
+                </a>
+                <hr/>
+            </section>
+
+            
+            
+            
+        
+            <section>
+                <a href="https://www.intelligent.com/best-online-computer-science-degree-programs/">
+                    <h2 class="title"><span>#6 Best Online Computer Science Degree Programs, Intelligent.com</span></h2>
+                    <p class="number">2021</p>
+                </a>
+                <hr/>
+            </section>
+
+            
+            
+            
+        
+            <section>
+                
+                    <h2 class="title"><span>#8 Best Online Bachelor&#39;s in Computer Science - TheBestSchools.org</span></h2>
+                    <p class="number">2020</p>
+                
+                <hr/>
+            </section>
+
+            
+            
+            
+        
+
+        
+
+        
+        <script type="text/javascript">
+
+            ;(function() {
+
+                $("#qf-25d48b25-2170-490a-a984-2aba84f8cc63").parent().addClass("ready");
+                $("#qf-25d48b25-2170-490a-a984-2aba84f8cc63").parent().addClass("ready").end().remove();
+
+            })();
+
+        </script>
+    <script type="text/javascript">
+      var resizeQf2Bar=function() { 
+                var arr = $(".quickfacts2.wide");
+                $.each(arr, function(key, value ) {
+                  var arr2 = $(value).find("section");
+                    $.each(arr2, function(key, value2 ) {
+                        var titleh = $(value2).find("h2.title").height();
+                        var desch=$(value2).find("p.desc").height();
+                         $(value2).find("h1.number").height(titleh + desch + 5);
+                     });
+		        });
+	          arr = $(".quickfacts2.wideBlue");
+                $.each(arr, function(key, value ) {                	
+                  var arr2 = $(value).find("section");
+                    $.each(arr2, function(key, value2 ) {
+                        var titleh = $(value2).find("h2.title").height();
+                        var desch=$(value2).find("p.desc").height();
+                         $(value2).find("h1.number").height(titleh + desch + 5);
+                     });
+		        });
+	          arr = $(".quickfacts2.wideHampton");
+                $.each(arr, function(key, value ) {                	
+                  var arr2 = $(value).find("section");
+                    $.each(arr2, function(key, value2 ) {
+                        var titleh = $(value2).find("h2.title").height();
+                        var desch=$(value2).find("p.desc").height();
+                         $(value2).find("h1.number").height(titleh + desch + 5);
+                     });
+		        });				
+				
+      	};
+        $( window ).resize(function() {
+            resizeQf2Bar();
+        });
+    </script>
+    
+</div></div>
+<div class="odu-columns oducolleft"><section class="section column parsys grid-4 alpha"><div class="flip-card-container">
+    <div class="card-front">
+
+                <img class="page-image" alt="Marketing Image" src="/sci/departments/compsci/_jcr_content/par/section/columns_1074426898/column_0/marketingpagesmall/pageimage.img.900.png?8101"/>
+
+
+                    <div class ="mask ">
+                    <p class ="line2 middle-center whitequote"> Future Students</p>
+                    </div>
+                </div>
+
+            <div class="card-overlay">
+                <p class ="line2 backmiddle whitequote">Future & Transfer Students</p> 
+                    <a href="/compsci/future" class="button flatwhite" target="">Learn More</a>
+                </div>
+        </div>
+<hr>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //console.log("marketing small ready");
+
+       var line2 = $('.card-front .line2');
+       var line4 = $('.card-front .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+       line2 = $('.card-overlay .line2');
+       line4 = $('.card-overlay .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+    });
+</script>
+
+
+				
+</section>
+<section class="section column parsys grid-4"><div class="youtube-player" data-youtube-is-lightbox="true"  data-youtube-video-id="YxM5VFNkALQ">
+            <a class="lightbox-youtube" href="/compsci/_jcr_content/par/section/columns_1074426898/column_1/youtube.ajax.lightbox.html"><img alt="Youtube video thumbnail" width="210"/>
+                <span class="view-button"></span>
+            </a>
+        </div><div id="msg"></div><hr />
+				
+</section>
+<section class="section column parsys grid-4 omega"><div class="flip-card-container">
+    <div class="card-front">
+
+                <img class="page-image" alt="Marketing Image" src="/sci/departments/compsci/_jcr_content/par/section/columns_1074426898/column_2/marketingpagesmall_164818804/pageimage.img.900.png?5161"/>
+
+
+                    <div class ="mask ">
+                    <p class ="line2 middle-center whitequote"> Current Students</p>
+                    </div>
+                </div>
+
+            <div class="card-overlay">
+                <p class ="line2 backmiddle whitequote">Current Students</p> 
+                    <a href="/compsci/current" class="button flatwhite" target="">Learn More</a>
+                </div>
+        </div>
+<hr>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //console.log("marketing small ready");
+
+       var line2 = $('.card-front .line2');
+       var line4 = $('.card-front .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+       line2 = $('.card-overlay .line2');
+       line4 = $('.card-overlay .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+    });
+</script>
+
+
+				
+</section>
+<hr /></div><div class="odu-columns oducolleft"><section class="section column parsys grid-4 alpha"><div class="flip-card-container">
+    <div class="card-front">
+
+                <img class="page-image" alt="Marketing Image" src="/sci/departments/compsci/_jcr_content/par/section/columns/column_0/marketingpagesmall/pageimage.img.900.png?2994"/>
+
+
+                    <div class ="mask ">
+                    <p class ="line2 middle-center whitequote"> Undergraduate Programs</p>
+                    </div>
+                </div>
+
+            <div class="card-overlay">
+                <p class ="line2 backmiddle whitequote">Undergraduate Programs</p> 
+                    <a href="/compsci/academics/undergraduate" class="button flatwhite" target="">Learn More</a>
+                </div>
+        </div>
+<hr>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //console.log("marketing small ready");
+
+       var line2 = $('.card-front .line2');
+       var line4 = $('.card-front .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+       line2 = $('.card-overlay .line2');
+       line4 = $('.card-overlay .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+    });
+</script>
+
+
+				
+</section>
+<section class="section column parsys grid-4"><div class="flip-card-container">
+    <div class="card-front">
+
+                <img class="page-image" alt="Marketing Image" src="/sci/departments/compsci/_jcr_content/par/section/columns/column_1/marketingpagesmall/pageimage.img.900.png?326"/>
+
+
+                    <div class ="mask ">
+                    <p class ="line2 middle-center whitequote"> Linked Programs</p>
+                    </div>
+                </div>
+
+            <div class="card-overlay">
+                <p class ="line2 backmiddle whitequote">Linked Programs</p> 
+                    <a href="/compsci/academics/undergraduate#linked" class="button flatwhite" target="">Learn More</a>
+                </div>
+        </div>
+<hr>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //console.log("marketing small ready");
+
+       var line2 = $('.card-front .line2');
+       var line4 = $('.card-front .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+       line2 = $('.card-overlay .line2');
+       line4 = $('.card-overlay .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+    });
+</script>
+
+
+				
+</section>
+<section class="section column parsys grid-4 omega"><div class="flip-card-container">
+    <div class="card-front">
+
+                <img class="page-image" alt="Marketing Image" src="/sci/departments/compsci/_jcr_content/par/section/columns/column_2/marketingpagesmall/pageimage.img.900.png?9376"/>
+
+
+                    <div class ="mask ">
+                    <p class ="line2 middle-center whitequote"> Graduate Programs</p>
+                    </div>
+                </div>
+
+            <div class="card-overlay">
+                <p class ="line2 backmiddle whitequote">Graduate Programs</p> 
+                    <a href="/compsci/academics/graduate" class="button flatwhite" target="">Learn More</a>
+                </div>
+        </div>
+<hr>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //console.log("marketing small ready");
+
+       var line2 = $('.card-front .line2');
+       var line4 = $('.card-front .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+       line2 = $('.card-overlay .line2');
+       line4 = $('.card-overlay .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+    });
+</script>
+
+
+				
+</section>
+<hr /></div>
+</section>
+
+				<section class="section parsys layout-5 bg-stripes-right">
+
+<hr />
+
+
+<h2 class="microgramma include-heading-bar waterside    ">As the region's only public urban research university, we are an incubator for innovation, discovery and entrepreneurship.</h2>
+
+
+<hr /><div class="odu-columns oducolleft"><section class="section column parsys grid-6 alpha"><div class="flip-card-container">
+    <div class="card-front">
+
+                <img class="page-image" alt="Marketing Image" src="/sci/departments/compsci/_jcr_content/par/section_1018686455/columns/column_0/marketingpagesmall/pageimage.img.900.png?2743"/>
+
+
+                    <div class ="mask ">
+                    <p class ="line4 middle-center whitequote"> Explore our Research</p>
+                    </div>
+                </div>
+
+            <div class="card-overlay">
+                <p class ="line4 backmiddle whitequote">Research Areas | Labs | Faculty Research Interests</p> 
+                    <a href="/compsci/research" class="button flatwhite" target="">Learn More</a>
+                </div>
+        </div>
+<hr>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //console.log("marketing small ready");
+
+       var line2 = $('.card-front .line2');
+       var line4 = $('.card-front .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+       line2 = $('.card-overlay .line2');
+       line4 = $('.card-overlay .line4');
+
+        $.each( line2, function(key, value ) {
+            $clamp(value, {clamp: 2, useNativeClamp: false});
+       });
+        $.each( line4, function(key, value ) {
+            $clamp(value, {clamp: 4, useNativeClamp: false});
+       });
+
+    });
+</script>
+
+
+				
+</section>
+<section class="section column parsys grid-6 omega">
+
+<link rel="stylesheet" href="/etc.clientlibs/wcm/foundation/clientlibs/accessibility.min.css" type="text/css">
+
+
+    <ul><li>Pursue new ideas in state-of-the-art labs</li>
+<li>Work on research projects with faculty in leading areas such as artificial intelligence, cybersecurity, data analytics, image processing, and machine learning</li>
+<li>Take both online and on-campus classes</li>
+<li>Obtain BS and MS degrees in 5-years through our linked program</li>
+</ul>
+ 
+
+
+
+				<div class="quickfacts2 defaultTallBlue small-call section"><div class="constrain">
+    
+        <span style="display:none" id="qf-25d48b25-2170-490a-a984-2aba84f8cc63"></span>
+        
+            
+
+            <section>
+                
+                    <h1 class="number">Top 25%</h1>
+                    <h2 class="title"><span>In R&amp;D expenditures </span></h2>
+                    <p class="desc">among CS depts ranked nationally by the National Science Foundation
+</p>
+                
+                <hr/>
+            </section>
+            
+            
+        
+
+        
+
+        
+        <script type="text/javascript">
+
+            ;(function() {
+
+                $("#qf-25d48b25-2170-490a-a984-2aba84f8cc63").parent().addClass("ready");
+                $("#qf-25d48b25-2170-490a-a984-2aba84f8cc63").parent().addClass("ready").end().remove();
+
+            })();
+
+        </script>
+    <script type="text/javascript">
+      var resizeQf2Bar=function() { 
+                var arr = $(".quickfacts2.wide");
+                $.each(arr, function(key, value ) {
+                  var arr2 = $(value).find("section");
+                    $.each(arr2, function(key, value2 ) {
+                        var titleh = $(value2).find("h2.title").height();
+                        var desch=$(value2).find("p.desc").height();
+                         $(value2).find("h1.number").height(titleh + desch + 5);
+                     });
+		        });
+	          arr = $(".quickfacts2.wideBlue");
+                $.each(arr, function(key, value ) {                	
+                  var arr2 = $(value).find("section");
+                    $.each(arr2, function(key, value2 ) {
+                        var titleh = $(value2).find("h2.title").height();
+                        var desch=$(value2).find("p.desc").height();
+                         $(value2).find("h1.number").height(titleh + desch + 5);
+                     });
+		        });
+	          arr = $(".quickfacts2.wideHampton");
+                $.each(arr, function(key, value ) {                	
+                  var arr2 = $(value).find("section");
+                    $.each(arr2, function(key, value2 ) {
+                        var titleh = $(value2).find("h2.title").height();
+                        var desch=$(value2).find("p.desc").height();
+                         $(value2).find("h1.number").height(titleh + desch + 5);
+                     });
+		        });				
+				
+      	};
+        $( window ).resize(function() {
+            resizeQf2Bar();
+        });
+    </script>
+    
+</div></div>
+
+				
+</section>
+<hr /></div>
+</section>
+
+				
+
+<hr class="rule" />
+				<section class="section parsys layout-2 bg-stripes-default">
+
+
+<h2 class="microgramma watersideHead   ">In the News</h2>
+<div class="align-right grid-4 omega floatlink"><section class="section parsys layout-5 bg-stripes-right">
+
+
+<h3 class="    "><a aria-label="social media link" href="/mae/news">ANNOUNCEMENTS</a></h3>
+
+
+<hr class="rule" /><script type="text/javascript">
+    
+    /*var newIconName = <!--%= fontAwesomeUnicode %>;
+
+    for (var key in faOldToNewArr) {
+        if (!faOldToNewArr.hasOwnProperty(key)) {
+            continue;
+        }
+        <!--%= fontAwesomeUnicode %> = newIconName.replace(key, faOldToNewArr[key]);
+    }*/
+</script>
+<a href="/compsci/department-newsletters" class="linkBtnComp button  flatwhite"> <i style="margin-right:5px;"  class="fas fa-comments"></i>CS Newsletter: Read the latest student, faculty & alumni accomplishments!</a>
+
+<!-- Google Analytics -->
+<script>
+    </script>
+<!-- End Google Analytics -->
+</section>
+
+				
+</div>
+
+<div class="odu-component-listentries  stacked teaser " ><article class="section page basicpage first odd"><div class="grid-3 alpha hteaser"><a href="/news/2022/7/ai"><img imgmapwidth="700" origheight="2920" src="/news/2022/7/ai/_jcr_content/image.img.440.jpg/1657832145370.jpg" alt="nikos-chrisochlides" origwidth="5184" title="nikos-chrisochlides" class="cq-dd-image  mainImgComp imageComp"></a></div><h2><a href="/news/2022/7/ai">AI Collaboration Between ODU, Jefferson Lab Improves Data Analysis</a></h2><p>ODU, Jefferson Lab physicists developed innovations to better analyze collisions of atomic particles.     
+    <a href="/news/2022/7/ai">(More)</a></p></article>
+<hr class="rule clear-left" /><article class="section page basicpage even"><div class="grid-3 alpha hteaser"><a href="/eng/news/2022/6/don_it_award"><img imgmapwidth="700" origheight="1325" src="/eng/news/2022/6/don_it_award/_jcr_content/image.img.440.jpg/1654886417647.jpg" alt="DON IT Award" origwidth="2000" title="DON IT Award" class="cq-dd-image  mainImgComp imageComp"></a></div><h2><a href="/eng/news/2022/6/don_it_award">ODU-Led Project Team Wins Navy Excellence Award</a></h2><p>A multidisciplinary team of researchers, led by ODU’s Andrew Collins, recently won a DON-IT award for the development of online training courses.    
+    <a href="/eng/news/2022/6/don_it_award">(More)</a></p></article>
+<hr class="rule clear-left" /><article class="section page basicpage odd"><div class="grid-3 alpha hteaser"><a href="/news/2022/5/code4pizza"><img imgmapwidth="700" origheight="4024" src="/news/2022/5/code4pizza/_jcr_content/image.img.440.jpg/1653674175952.jpg" alt="2022-code-for-pizza-17" origwidth="6048" title="2022-code-for-pizza-17" class="cq-dd-image  mainImgComp imageComp"></a></div><h2><a href="/news/2022/5/code4pizza">ODU Celebrates Winners of Code4Pizza Competition</a></h2><p>Students from Floyd E. Kellam, Meridian and Grassfield high schools won pizza parties.    
+    <a href="/news/2022/5/code4pizza">(More)</a></p></article>
+<hr class="rule clear-left" /></div><footer class="footer parsys section">
+
+
+
+    <p><a href="/compsci/news">Read more Computer Science news</a></p>
+ 
+
+
+
+</footer>
+
+</section>
+
+				
+
+<hr />
+				<section class="section parsys layout-default bg-stripes-default">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="testimonial-card card-text-left grey  ">
+    <div class="card-img-right">
+        
+        <div class="card-img ">
+            <img src="/sci/departments/compsci/_jcr_content/par/section_1003026338/testimonials/pageimage.img.800.png?65751" alt="testimonial image"/>
+        </div>
+        
+
+        
+    </div>
+    <div class="card-text card-text-left  ">
+        <div class="statement"><p><em>One of the primary reasons I got hired was because of the courses that I took at ODU. My company's CTO was impressed with what I had learned during grad school and also my academic projects. </em></p>
+ </div>
+        <div class="right hide"><a href="">Read more <i class="fa fa-angle-right"> </i> </a></div>
+        <div class="line"> </div>
+        <h4 class="cardinfo info-name">PRASANNA SAJJAN</h4>
+        <p class="cardinfo info-line1">Master of Science</p>
+        <p class="cardinfo info-line2">May 2016</p>
+        <p class="cardinfo info-line3"></p>
+    </div>
+</div>
+<hr>
+<footer class="footer parsys section">
+
+
+
+    <p><a href="/compsci/future/testimonials">Read more testimonials</a></p>
+ 
+
+
+
+</footer>
+
+</section>
+
+				<div class="cq-dd-paragraph">
+
+
+<!-- Tag for Activity Group: ODU, Activity Name: Department of Computer Science (Activity), Activity ID: 9774409 -->
+<!-- Expected URL: https://odu.edu/compsci -->
+
+<!--
+Activity ID: 9774409
+Activity Name: Department of Computer Science (Activity)
+Activity Group Name: ODU
+-->
+
+<!--
+Start of Floodlight Tag: Please do not remove
+Activity name of this tag: Department of Computer Science (Activity)
+URL of the webpage where the tag is expected to be placed: https://odu.edu/compsci
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 06/16/2020
+-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://8334240.fls.doubleclick.net/activityi;src=8334240;type=oduli0;cat=depar0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="https://8334240.fls.doubleclick.net/activityi;src=8334240;type=oduli0;cat=depar0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
+<!-- End of Floodlight Tag: Please do not remove -->
+
+
+</div>
+
+				
+
+                
+
+
+
+
+
+
+<section class="fb-comment-section">
+</section> 
+            </div>
+            <div class="grid-4 menu-1">
+                <!--cq:include path="sectionnavigation" resourceType="odu/components/menus/sectionnavigation" /-->
+                
+                <div class="iparys_inherited"></div><div class="cq-dd-paragraph">
+
+
+<!--
+  <PageMap>
+    <DataObject type="thumbnail" />
+  </PageMap>
+-->
+</div>
+<script type="text/javascript">
+    
+    /*var newIconName = <!--%= fontAwesomeUnicode %>;
+
+    for (var key in faOldToNewArr) {
+        if (!faOldToNewArr.hasOwnProperty(key)) {
+            continue;
+        }
+        <!--%= fontAwesomeUnicode %> = newIconName.replace(key, faOldToNewArr[key]);
+    }*/
+</script>
+<a href="/admission/apply" class="linkBtnComp button  flatwhite"> <i style="margin-right:5px;"  class="fas fa-pencil-alt"></i>Apply Now</a>
+
+<!-- Google Analytics -->
+<script>
+    </script>
+<!-- End Google Analytics --><script type="text/javascript">
+    
+    /*var newIconName = <!--%= fontAwesomeUnicode %>;
+
+    for (var key in faOldToNewArr) {
+        if (!faOldToNewArr.hasOwnProperty(key)) {
+            continue;
+        }
+        <!--%= fontAwesomeUnicode %> = newIconName.replace(key, faOldToNewArr[key]);
+    }*/
+</script>
+<a href="mailto:info@cs.odu.edu" class="linkBtnComp button  flatwhite"> <i style="margin-right:5px;"  class="fas fa-info"></i>Request Information</a>
+
+<!-- Google Analytics -->
+<script>
+    </script>
+<!-- End Google Analytics --><section class="section parsys layout-2">
+<div class="odu-component-list_info(contact-info)  sidebar" ><header class="overlay"><h1>Contact</h1></header>
+    <ul class="contact">            
+        <li><strong><a href="/compsci">Department of Computer Science</a></strong></li>
+        
+    
+
+<li class="address1">3300 Engineering & Computational Sciences Building</li>
+
+
+<li class="address2">
+    
+    <span> </span>
+    
+</li> 
+
+    <div class="phone">757-683-7740 (office)</div>
+          
+          
+    
+      
+    <li class="email"><a aria-label="email link" href="mailto:info@cs.odu.edu">info@cs.odu.edu</a></li>
+    </ul>
+    
+
+<ul class="sociallinks"></ul>
+
+<div class="clear"></div></div><script type="text/javascript">
+    
+    /*var newIconName = <!--%= fontAwesomeUnicode %>;
+
+    for (var key in faOldToNewArr) {
+        if (!faOldToNewArr.hasOwnProperty(key)) {
+            continue;
+        }
+        <!--%= fontAwesomeUnicode %> = newIconName.replace(key, faOldToNewArr[key]);
+    }*/
+</script>
+<a href="/compsci/directory" class="linkBtnComp button  flatwhite"> <i style="margin-right:5px;"  class="fas fa-users"></i>DIRECTORY</a>
+
+<!-- Google Analytics -->
+<script>
+    </script>
+<!-- End Google Analytics --><script type="text/javascript">
+    
+    /*var newIconName = <!--%= fontAwesomeUnicode %>;
+
+    for (var key in faOldToNewArr) {
+        if (!faOldToNewArr.hasOwnProperty(key)) {
+            continue;
+        }
+        <!--%= fontAwesomeUnicode %> = newIconName.replace(key, faOldToNewArr[key]);
+    }*/
+</script>
+<a href="/compsci/welcome" class="linkBtnComp button  flatwhite"> <i style="margin-right:5px;"  class="fas fa-comment"></i>CHAIR'S WELCOME</a>
+
+<!-- Google Analytics -->
+<script>
+    </script>
+<!-- End Google Analytics -->
+</section>
+<section class="section parsys layout-2 bg-stripes-default"><header class="header parsys overlay section">
+
+
+<h1 class="    ">Quick Links</h1>
+
+</header>
+<section class="featured-page-no-image">
+    <div class="featured-page-no-image-icon">
+            <div class="waterside-icon">
+                       <i class="fas fa-wifi"></i>
+                        </div>
+                </div>
+        <div class="featured-page-no-image-description">
+            <h3 class=""><a href="https://systems.cs.odu.edu/Remote_Resources">Remote Access Resources</a></h3>
+                <p></p>
+            <footer></footer>
+                </div>
+        </section>
+
+<hr /><section class="featured-page-no-image">
+    <div class="featured-page-no-image-icon">
+            <div class="waterside-icon">
+                       <i class="fas fa-users"></i>
+                        </div>
+                </div>
+        <div class="featured-page-no-image-description">
+            <h3 class=""><a href="/compsci/current/resources">Computer Science Resources</a></h3>
+                <p></p>
+            <footer></footer>
+                </div>
+        </section>
+
+<hr /><section class="featured-page-no-image">
+    <div class="featured-page-no-image-icon">
+            <div class="waterside-icon">
+                       <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                </div>
+        <div class="featured-page-no-image-description">
+            <h3 class=""><a href="https://www.cs.odu.edu/~zeil/courseSchedule/">Course Schedule</a></h3>
+                <p></p>
+            <footer></footer>
+                </div>
+        </section>
+
+<hr /><section class="featured-page-no-image">
+    <div class="featured-page-no-image-icon">
+            <div class="waterside-icon">
+                       <i class="fas fa-calendar-alt"></i>
+                        </div>
+                </div>
+        <div class="featured-page-no-image-description">
+            <h3 class=""><a href="https://www.cs.odu.edu/~zeil/colloq.html">Colloquium Schedule</a></h3>
+                <p></p>
+            <footer></footer>
+                </div>
+        </section>
+
+<hr />
+</section>
+<section class="section parsys layout-2 bg-stripes-default"><header class="header parsys overlay section">
+
+
+<h1 class="    ">Upcoming Events</h1>
+
+</header>
+
+
+<div class="odu-component-listevents  stacked date" >
+
+    <span class="date">
+        <span class="month">Aug</span>
+        <span class="day">5</span>
+    </span><h3><a href="/academics/calendar/academic-calendar-dates/2022/8/session_3_classes_an">Session 3 classes and exams end</a></h3><p class="event-date">08/05/2022</p><p>Summer Session 3 (full-session) classes and exams end. Final exams will be held during last class meeting.    
+   <a class="morelink" href="/academics/calendar/academic-calendar-dates/2022/8/session_3_classes_an">(More)</a></p><p></p>
+        <hr class="rule clear-left" />
+
+    <span class="date">
+        <span class="month">Aug</span>
+        <span class="day">5</span>
+    </span><h3><a href="/academics/calendar/academic-calendar-dates/2022/8/withdraw_deadline_se">Withdraw deadline Session 3 classes</a></h3><p class="event-date">08/05/2022</p><p>Last day to withdraw from Session 3 classes. Requests to withdraw from Session 3 classes must be received by this date. Requests to...    
+   <a class="morelink" href="/academics/calendar/academic-calendar-dates/2022/8/withdraw_deadline_se">(More)</a></p><p></p>
+        <hr class="rule clear-left" /></div><footer class="footer parsys section">
+
+
+
+    <p><a href="/compsci/calendar">More events</a></p>
+ 
+
+
+
+</footer>
+
+</section>
+<section class="section parsys"><header class="header parsys overlay section">
+
+
+<h1 class="    ">Follow us!</h1>
+
+</header>
+
+
+
+
+<a data-chrome="nofooter" data-theme="light" class="twitter-timeline" data-height="400" data-width="600" href="https://twitter.com/oducs?ref_src=twsrc%5Etfw">Tweets by Old Dominion University</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<hr class="rule" />
+</section>
+<section class="section parsys layout-2 bg-stripes-default"><header class="header parsys overlay section">
+
+
+<h1 class="    ">Accreditation</h1>
+
+</header>
+<img imgmapwidth="700" origheight="369" src="/sci/departments/compsci/_jcr_content/rightpar/section_839655712/image.img.520.png/1599166833252.png" alt="ABET CAC Logo" origwidth="861" title="ABET CAC Logo" class="cq-dd-image  mainImgComp imageComp"><footer class="footer parsys section">
+
+
+
+    <p><a href="/compsci/assessment">Educational Objectives &amp; Student Outcomes</a></p>
+ 
+
+
+
+</footer>
+
+</section>
+
+            </div>
+            
+
+
+
+        </div>
+    </div>
+    
+</section>
+
+        <!-- Return to Top -->
+<a id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+        <section class="callstoactionsection">    
+        <div class="constrain container-16 clearfix">
+            
+            <div class="grid-8">
+                <h2 class="sectiontitle"> Want more information?</h2>
+                <h5 class="captiontitle"> Contact us today!</h5>
+            </div>
+            
+            <div class="grid-4 theme-1">
+                <a href="mailto:info@cs.odu.edu" class="button flatblue"> <i class= "fa fa-envelope">&nbsp;</I>Email Us</a>
+                </div>
+            </div>
+    </section>
+        
+        
+
+        <footer id="university-footer">
+
+    <div class="footer-content">
+        <div class="constrain">
+            <div class="odu-columns oducolleft"><section class="section column parsys grid-3 alpha"><div class="cq-dd-paragraph">
+
+
+<p>Old Dominion University<br />
+Norfolk, VA 23529</p>
+
+<div class="list-group">
+<a href="/about/contact" title="University Contact & Mailing Information"><i class="far fa-envelope"></i> Contact & Mailing Info</a><br />
+<a href="/about/visitors/directions" title="Directions to Campus"><i class="far fa-map-marker-alt"></i> Directions to Campus</a></p>
+</div>
+
+				<div class="cq-dd-paragraph">
+
+
+<!-- Global site tag (gtag.js) - Google Ads: 833221802 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-833221802"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'AW-833221802');
+</script>
+</div>
+
+				
+</section>
+<section class="section column parsys grid-3"><img imgmapwidth="700" origheight="329" src="/settings/_jcr_content/footer-parsys/columns/column_1/image.img.440.png/1579702763192.png" alt="footer-map-png" origwidth="549" title="footer-map-png" class="cq-dd-image  mainImgComp imageComp">
+				
+</section>
+<section class="section column parsys grid-6">
+
+
+
+    <p>Old Dominion University, located in Norfolk, is Virginia's forward-focused public doctoral research institution with approximately 23,500 students, rigorous academics, an energetic residential community and initiatives that contribute $2.6 billion annually to Virginia's economy.</p>
+ 
+
+
+
+				
+</section>
+<section class="section column parsys grid-4 omega"><div class="cq-dd-paragraph">
+
+
+<p><br /><a href="/about/connect">Connect with #ODU</a><br />
+<span style="font-size: 1.4em; line-height: 1.55em;">
+<a aria-label="ODU on Facebook" href="/about/connect/facebook" title="ODU Facebook"><i class="fab fa-facebook fa-fw"></i></a> 
+<a aria-label="ODU on Twitter" href="/about/connect/twitter" title="ODU Twitter (@ODU)"><i class="fab fa-twitter fa-fw"></i></a> 
+<a aria-label="ODU on Instagram" href="/about/connect/instagram" title="ODU on Instagram (@olddominionu)"><i class="fab fa-instagram fa-fw"></i></a> 
+<a aria-label="ODU on Youtube" href="/about/connect/youtube" title="ODU YouTube"><i class="fab fa-youtube fa-fw"></i></a> 
+<a aria-label="ODU on Pinterest" href="/about/connect/pinterest" title="ODU Pinterest"><i class="fab fa-pinterest fa-fw"></i></a> 
+<a aria-label="ODU on Linkedin" href="/about/connect/linkedin" title="ODU on LinkedIn"><i class="fab fa-linkedin fa-fw"></i></a> 
+ </span>
+</div>
+
+				
+</section>
+<hr /></div>
+				
+
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <div class="constrain">
+            <p class="statement">
+                Copyright &copy; Old Dominion University &bull;
+                Updated 3/12/2022
+            </p>
+
+            <p class="links">
+                <a href="/privacy">Privacy</a>
+<!--                &bull; 
+                <a href="#">Disclaimer</a>-->
+                &bull;
+                <a href="/accessibility">Accessibility</a>
+                &bull; 
+                <a href="/about/compliance/transparency">Consumer Information</a>
+                
+            </p>
+        </div>
+    </div>
+    
+</footer>
+    </div>
+    <div id="uni-phone-menu">
+    <nav id="uni-phone-nav" title="University Navigation"> 
+        <ul> 
+            <li> 
+            <a href="/about">About ODU</a> 
+            </li> 
+            <li> 
+            <a href="/academics">Academics</a> 
+            </li> 
+            <li> 
+            <a href="/life">University Life</a> 
+            </li> 
+            <li> 
+            <a href="/admission">Admission &amp; Aid</a> 
+            </li> 
+            <li> 
+            <a href="/research">Research &amp; Impact</a> 
+            </li> 
+            <li> 
+            <a href="http://www.odusports.com/">Athletics</a> 
+            </li> 
+        </ul> 
+    </nav>        
+    <nav id="uni-phone-find" title="Find People, Dates, and Information">
+        <ul>
+            <li>
+            <a href="/a-to-z">A to Z</a></li>
+            <li>
+            <a href="/directory">Directories</a></li>
+            <li>
+            <a href="/library">Libraries</a></li>
+            <li>
+            <a href="/calendar">Calendars</a></li>
+        </ul>
+        <form action="/search" method="get" id="uni-phone-search" class="clearfix">
+            <label for="uni-phone-search-bar" class="accessible">
+                Search ODU
+            </label>
+            <input id="uni-phone-search-bar" type="text" size="15" maxlength="35" name="q" value="Search ODU" onfocus="if(value=='Search ODU'){ value='';}" onblur="if(value==''){value='Search ODU';}">
+            <button type="submit">
+                Search
+            </button>
+        </form>
+    </nav>
+</div><!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MDTQZL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MDTQZL');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+
+
+
+        
+        ga('create', 'UA-2088428-1', 'auto');
+        
+       
+        
+      
+</script>
+  <!-- End Google Analytics -->
+
+</body>
+</html>
